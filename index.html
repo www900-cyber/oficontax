@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="OFICONTAX - Asesoría contable y tributaria para emprendedores y Pymes en Sincelejo, Sucre.">
+<meta name="theme-color" content="#08783f">
+<title>OFICONTAX | Asesoría Contable y Tributaria</title>
+
+<style>
+:root{
+  --green:#08783f;
+  --green-dark:#04552d;
+  --green-light:#eaf8f0;
+  --green-soft:#f4fbf7;
+  --gold:#f2c500;
+  --ink:#10221a;
+  --muted:#64736c;
+  --white:#fff;
+  --line:#dce9e1;
+  --shadow:0 16px 45px rgba(3,62,32,.10);
+  --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--ink);background:#fff;line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+button,input,select{font:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:var(--green);color:#fff;font-size:13px}
+.topbar .container{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.top-info{display:flex;gap:28px;flex-wrap:wrap}
+.top-social{display:flex;gap:14px}
+.top-social a{opacity:.9}.top-social a:hover{opacity:1}
+.header{
+  position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);border-bottom:1px solid #edf2ef;
+}
+.nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:#10221a}
+.logo-mark{
+  width:48px;height:48px;border:3px solid var(--green);border-radius:50%;
+  display:grid;place-items:center;color:var(--green);font-size:23px;font-weight:900;
+}
+.logo small{display:block;font-size:9px;letter-spacing:1px;color:#6d7772;margin-top:-4px}
+.menu{display:flex;align-items:center;gap:7px}
+.menu a{
+  padding:31px 18px 27px;font-weight:700;color:#34423b;position:relative
+}
+.menu a:hover,.menu a.active{color:var(--green)}
+.menu a.active:after{
+  content:"";position:absolute;height:4px;background:var(--gold);bottom:0;left:18px;right:18px;border-radius:3px
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;
+  border-radius:9px;padding:13px 21px;font-weight:800;cursor:pointer;transition:.2s;
+}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 8px 20px rgba(8,120,63,.18)}
+.btn-green:hover{background:var(--green-dark);transform:translateY(-1px)}
+.btn-outline{border:1.5px solid var(--green);color:var(--green);background:#fff}
+.btn-outline:hover{background:var(--green-light)}
+.mobile-btn{display:none;background:none;border:0;font-size:26px;color:var(--green)}
+.hero{background:linear-gradient(120deg,#fff 0%,#fff 53%,#f0faf5 100%);overflow:hidden}
+.hero .container{min-height:610px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}
+.eyebrow{color:var(--green);font-weight:900;letter-spacing:1.8px;font-size:14px;text-transform:uppercase;margin-bottom:13px}
+.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.05;letter-spacing:-2px;margin-bottom:22px}
+.hero h1 span{color:var(--green)}
+.hero p{font-size:18px;color:var(--muted);max-width:600px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero-points{display:flex;gap:24px;flex-wrap:wrap;margin-top:32px;color:#4d5d55;font-size:14px;font-weight:700}
+.hero-points span:before{content:"✓";display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#dff5e8;color:var(--green);margin-right:7px}
+.hero-art{position:relative;min-height:490px;display:grid;place-items:center}
+.hero-card{
+  width:min(510px,100%);height:350px;border-radius:32px;
+  background:linear-gradient(145deg,#f5faf7,#d8eee1);
+  box-shadow:var(--shadow);position:relative;overflow:hidden;
+}
+.laptop{position:absolute;left:50px;top:55px;width:410px;height:250px;background:#18231f;border-radius:18px 18px 8px 8px;padding:12px;transform:rotate(-3deg);box-shadow:0 22px 40px rgba(0,0,0,.2)}
+.screen{height:205px;border-radius:9px;background:#f8fffb;padding:18px}
+.chart{height:125px;display:flex;align-items:end;gap:12px;border-bottom:1px solid #cfe1d6}
+.bar{width:35px;background:var(--green);border-radius:6px 6px 0 0;opacity:.85}
+.bar:nth-child(1){height:50%}.bar:nth-child(2){height:78%}.bar:nth-child(3){height:61%}.bar:nth-child(4){height:92%}.bar:nth-child(5){height:73%}
+.calc{position:absolute;right:38px;bottom:25px;width:125px;height:95px;background:#fff;border-radius:15px;box-shadow:0 15px 30px rgba(0,0,0,.15);padding:12px;transform:rotate(8deg)}
+.calc div{height:10px;background:#dce9e1;border-radius:4px;margin-bottom:8px}.calc div:last-child{background:var(--green);width:70%}
+.floating{
+  position:absolute;right:-5px;top:45px;background:var(--green);color:#fff;border-radius:22px;
+  padding:24px;width:215px;box-shadow:0 18px 35px rgba(8,120,63,.25)
+}
+.floating strong{display:block;font-size:18px;margin-bottom:12px}.floating p{font-size:14px;color:#eaf8f0}
+.section{padding:85px 0}.section.soft{background:var(--green-soft)}
+.section-head{text-align:center;max-width:750px;margin:0 auto 45px}
+.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 14px}
+.section-head p{color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.feature{padding:27px 20px;background:#fff;border:1px solid var(--line);border-radius:18px;text-align:center;transition:.25s}
+.feature:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.icon{width:54px;height:54px;margin:0 auto 15px;border-radius:50%;display:grid;place-items:center;border:2px solid #a8dfbf;color:var(--green);font-size:24px;background:#f6fcf8}
+.feature h3{font-size:17px;margin-bottom:9px}.feature p{font-size:14px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.about-photo{
+  min-height:470px;border-radius:30px;background:
+  linear-gradient(145deg,#dff3e7,#f9fcfa);position:relative;overflow:hidden;box-shadow:var(--shadow);
+  display:flex;align-items:flex-end;justify-content:center;
+}
+.person{font-size:150px;filter:grayscale(.1);padding-bottom:20px}
+.about-copy h2{font-size:42px;line-height:1.1;margin:10px 0 18px}.about-copy p{color:var(--muted);margin-bottom:20px}
+.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}
+.badge{font-weight:800;font-size:14px}.badge span{display:block;color:var(--green);font-size:25px;margin-bottom:4px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:#fff;border:1px solid var(--line);border-radius:20px;padding:27px;box-shadow:0 5px 18px rgba(0,0,0,.03)}
+.service h3{font-size:20px;margin:12px 0 8px}.service p{color:var(--muted);font-size:15px}.service .service-link{display:inline-block;color:var(--green);font-weight:800;margin-top:15px}
+.calculator-wrap{display:grid;grid-template-columns:320px 1fr;gap:22px;align-items:start}
+.calc-menu{background:#fff;border:1px solid var(--line);border-radius:20px;padding:10px}
+.calc-tab{width:100%;text-align:left;border:0;background:#fff;padding:15px;border-radius:12px;font-weight:800;cursor:pointer;color:#4c5b54}
+.calc-tab.active{background:var(--green-light);color:var(--green)}
+.calc-panel{display:none;background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow)}
+.calc-panel.active{display:block}
+.calc-panel h3{font-size:26px;margin-bottom:5px}.calc-panel>p{color:var(--muted);margin-bottom:22px}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.field label{display:block;font-size:13px;font-weight:800;margin-bottom:7px;color:#3c4b44}
+.field input,.field select{width:100%;padding:13px 14px;border:1px solid #cddbd3;border-radius:10px;outline:none;background:#fff}
+.field input:focus,.field select:focus{border-color:var(--green);box-shadow:0 0 0 3px #e5f5eb}
+.full{grid-column:1/-1}
+.result{
+  margin-top:24px;background:linear-gradient(135deg,var(--green),#0c9250);color:#fff;border-radius:17px;padding:20px
+}
+.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.result small{opacity:.8}.result strong{display:block;font-size:23px}
+.disclaimer{font-size:12px;color:#718078;margin-top:15px}
+.faq{max-width:850px;margin:auto}.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;background:none;border:0;padding:20px 0;text-align:left;font-size:17px;font-weight:800;cursor:pointer;display:flex;justify-content:space-between}
+.faq-a{display:none;color:var(--muted);padding:0 0 20px}.faq-item.open .faq-a{display:block}
+.contact{background:var(--green);color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.contact p{color:#d9f0e2}.contact-card{background:#fff;color:var(--ink);padding:30px;border-radius:22px}
+.contact-item{display:flex;gap:13px;margin:16px 0}.contact-item b{display:block}.contact-item span{color:var(--muted);font-size:14px}
+.footer{background:#063d24;color:#dcece3;padding:35px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer h4{color:#fff;margin-bottom:12px}.footer a{display:block;margin:7px 0;color:#c9ddd3;font-size:14px}.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:18px;font-size:12px;text-align:center;color:#a9c0b4}
+.float-wa{position:fixed;right:22px;bottom:22px;z-index:1200;width:58px;height:58px;border-radius:50%;background:#16a65a;color:#fff;display:grid;place-items:center;font-size:27px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,30px);background:#10221a;color:#fff;padding:13px 18px;border-radius:10px;opacity:0;pointer-events:none;transition:.25s;z-index:1500}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1000px){
+  .menu{display:none}.mobile-btn{display:block}
+  .nav.open .menu{display:flex;position:absolute;top:88px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);padding:10px}
+  .nav.open .menu a{padding:14px 18px}.nav.open .menu a.active:after{display:none}
+  .hero .container{grid-template-columns:1fr}.hero{padding-top:35px}.hero-art{min-height:430px}
+  .features{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:repeat(2,1fr)}
+  .calculator-wrap{grid-template-columns:1fr}.calc-menu{display:grid;grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .topbar .container{padding:8px 0}.top-info{gap:5px 15px}.top-social{display:none}
+  .hero h1{font-size:42px}.hero-art{min-height:350px}.hero-card{height:275px}.laptop{left:15px;top:45px;width:320px;height:190px}.screen{height:155px}.chart{height:90px}.calc{right:10px;bottom:10px}
+  .floating{right:0;top:10px;width:175px;padding:15px}.floating strong{font-size:15px}
+  .features,.services,.about-grid,.contact-grid{grid-template-columns:1fr}.badges,.result-grid,.form-grid{grid-template-columns:1fr}
+  .section{padding:65px 0}.about-photo{min-height:330px}.calc-menu{grid-template-columns:1fr}.calc-panel{padding:22px}
+  .footer-grid{grid-template-columns:1fr}.btn{width:100%}.actions{flex-direction:column}
+}
+</style>
+</head>
+
+<body>
+<div class="topbar">
+  <div class="container">
+    <div class="top-info">
+      <span>📍 Cra. 18 # 23-20 Of. 407-1, Sincelejo, Sucre</span>
+      <span>✉️ oficontax@gmail.com</span>
+      <span>📱 +57 302 397 1770</span>
+    </div>
+    <div class="top-social">
+      <a href="https://www.instagram.com/oficontax/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/share/1Bq746Qgba/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://linktr.ee/Oficontax" target="_blank" rel="noopener">Linktree</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container nav" id="nav">
+    <a class="logo" href="#inicio">
+      <div class="logo-mark">▥</div>
+      <div>OFICONTAX<small>ASESORÍA CONTABLE Y TRIBUTARIA</small></div>
+    </a>
+    <button class="mobile-btn" id="mobileBtn" aria-label="Abrir menú">☰</button>
+    <nav class="menu">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#quien-soy">Quien Soy</a>
+      <a href="#servicios">Servicios Contables</a>
+      <a href="#mentorias">Mentorías</a>
+      <a href="#libro">Libro</a>
+      <a href="#calculadoras">Calculadoras</a>
+    </nav>
+    <a class="btn btn-green desktop-contact" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20recibir%20asesor%C3%ADa." target="_blank" rel="noopener">💬 Contáctanos</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container">
+    <div>
+      <div class="eyebrow">OFICONTAX · Sincelejo, Sucre</div>
+      <h1>Asesoría contable y tributaria para <span>hacer crecer tu empresa</span></h1>
+      <p>Ayudamos a emprendedores y Pymes a mantener su contabilidad organizada, cumplir sus obligaciones y tomar mejores decisiones financieras.</p>
+      <div class="actions">
+        <a class="btn btn-green" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20una%20asesor%C3%ADa." target="_blank" rel="noopener">💬 Escríbenos por WhatsApp</a>
+        <a class="btn btn-outline" href="#servicios">Nuestros servicios →</a>
+      </div>
+      <div class="hero-points">
+        <span>Atención personalizada</span><span>Confidencialidad</span><span>Resultados efectivos</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="hero-card">
+        <div class="laptop">
+          <div class="screen">
+            <div style="font-weight:800;margin-bottom:10px;color:#173328">Panel financiero</div>
+            <div class="chart"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i></div>
+          </div>
+        </div>
+        <div class="calc"><div></div><div></div><div></div><div></div></div>
+      </div>
+      <div class="floating"><strong>Especialistas en RST y Régimen Especial</strong><p>Formalizamos Pymes y gestionamos tus trámites tributarios.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="mentorias">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">¿Por qué elegirnos?</div>
+      <h2>Somos tu <span style="color:var(--green)">aliado estratégico</span></h2>
+      <p>Soluciones contables y tributarias adaptadas a las necesidades de tu negocio.</p>
+    </div>
+    <div class="features">
+      <article class="feature"><div class="icon">♙</div><h3>Asesoría personalizada</h3><p>Analizamos tu negocio y ofrecemos soluciones a la medida.</p></article>
+      <article class="feature"><div class="icon">✓</div><h3>Confidencialidad y seguridad</h3><p>Manejamos tu información con total confidencialidad.</p></article>
+      <article class="feature"><div class="icon">▣</div><h3>Cumplimiento</h3><p>Acompañamiento para cumplir tus obligaciones.</p></article>
+      <article class="feature"><div class="icon">◷</div><h3>Ahorro de tiempo</h3><p>Optimizamos procesos para que te enfoques en crecer.</p></article>
+      <article class="feature"><div class="icon">▥</div><h3>Información para decidir</h3><p>Reportes claros para mejores decisiones.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="quien-soy">
+  <div class="container about-grid">
+    <div class="about-photo"><div class="person">👨🏻‍💼</div></div>
+    <div class="about-copy">
+      <div class="eyebrow">¿Quién soy?</div>
+      <h2>Comprometido con el crecimiento de tu negocio</h2>
+      <p>Soy contador público con enfoque en asesoría contable y tributaria para Pymes y emprendedores. Mi misión es acompañarte para que tu empresa sea más rentable, eficiente y cumpla adecuadamente con sus obligaciones.</p>
+      <div class="badges">
+        <div class="badge"><span>✦</span>Experiencia profesional</div>
+        <div class="badge"><span>⌘</span>Actualización constante</div>
+        <div class="badge"><span>◎</span>Enfoque en resultados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Servicios contables</div>
+      <h2>Soluciones para cada etapa de tu negocio</h2>
+      <p>Selecciona el servicio que necesitas y solicita orientación directamente por WhatsApp.</p>
+    </div>
+    <div class="services">
+      <article class="service"><div class="icon">▤</div><h3>Contabilidad</h3><p>Organización y acompañamiento de la información contable de tu negocio.</p><a class="service-link" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20me%20interesa%20el%20servicio%20de%20Contabilidad." target="_blank">Solicitar →</a></article>
+      <article class="service"><div class="icon">%</div><h3>Asesoría tributaria</h3><p>Orientación para obligaciones y procesos tributarios según cada caso.</p><a class="service-link" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20me%20interesa%20la%20Asesor%C3%ADa%20Tributaria." target="_blank">Solicitar →</a></article>
+      <article class="service"><div class="icon">⚑</div><h3>Régimen Simple de Tributación</h3><p>Orientación para emprendedores y empresas interesadas en el RST.</p><a class="service-link" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20informaci%C3%B3n%20sobre%20RST." target="_blank">Solicitar →</a></article>
+      <article class="service"><div class="icon">▦</div><h3>Régimen Especial</h3><p>Acompañamiento contable y tributario para entidades que correspondan a este régimen.</p><a class="service-link" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20informaci%C3%B3n%20sobre%20R%C3%A9gimen%20Especial." target="_blank">Solicitar →</a></article>
+      <article class="service"><div class="icon">↗</div><h3>Formalización de Pymes</h3><p>Orientación para avanzar en la formalización y organización empresarial.</p><a class="service-link" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20formalizar%20mi%20empresa." target="_blank">Solicitar →</a></article>
+      <article class="service"><div class="icon">✓</div><h3>Trámites tributarios</h3><p>Gestión y acompañamiento en trámites relacionados con obligaciones tributarias.</p><a class="service-link" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20necesito%20ayuda%20con%20un%20tr%C3%A1mite%20tributario." target="_blank">Solicitar →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="calculadoras">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Herramientas gratuitas</div>
+      <h2>Calculadoras contables para tus clientes</h2>
+      <p>Realiza estimaciones rápidas directamente desde la página. Los resultados son informativos y deben validarse según cada situación particular.</p>
+    </div>
+
+    <div class="calculator-wrap">
+      <div class="calc-menu">
+        <button class="calc-tab active" data-tab="iva">🧾 IVA 19%</button>
+        <button class="calc-tab" data-tab="uvt">🔢 Pesos ↔ UVT</button>
+        <button class="calc-tab" data-tab="retencion">📉 Retención estimada</button>
+        <button class="calc-tab" data-tab="interes">💰 Interés simple</button>
+        <button class="calc-tab" data-tab="prestamo">🏦 Cuota de préstamo</button>
+      </div>
+
+      <div>
+        <div class="calc-panel active" id="panel-iva">
+          <h3>Calculadora de IVA</h3><p>Calcula IVA sobre una base o descompone un precio que ya incluye IVA.</p>
+          <div class="form-grid">
+            <div class="field"><label>Modo</label><select id="ivaMode"><option value="add">Agregar IVA a la base</option><option value="included">El precio ya incluye IVA</option></select></div>
+            <div class="field"><label>Tarifa IVA (%)</label><input id="ivaRate" type="number" value="19" min="0" step="0.01"></div>
+            <div class="field full"><label>Valor ($ COP)</label><input id="ivaBase" type="number" value="1000000" min="0" step="1000"></div>
+          </div>
+          <button class="btn btn-green" style="margin-top:18px" onclick="calcIVA()">Calcular IVA</button>
+          <div class="result" id="ivaResult"></div>
+        </div>
+
+        <div class="calc-panel" id="panel-uvt">
+          <h3>Convertidor de UVT</h3><p>Para 2026 se usa una UVT de $52.374, según la Resolución DIAN 000238 de 2025.</p>
+          <div class="form-grid">
+            <div class="field"><label>Valor</label><input id="uvtValue" type="number" value="10" min="0" step="0.01"></div>
+            <div class="field"><label>Convertir</label><select id="uvtMode"><option value="toPesos">UVT → Pesos</option><option value="toUVT">Pesos → UVT</option></select></div>
+            <div class="field full"><label>UVT del año</label><input id="uvtRate" type="number" value="52374" min="1" step="1"></div>
+          </div>
+          <button class="btn btn-green" style="margin-top:18px" onclick="calcUVT()">Convertir</button>
+          <div class="result" id="uvtResult"></div>
+        </div>
+
+        <div class="calc-panel" id="panel-retencion">
+          <h3>Calculadora de retención estimada</h3><p>Herramienta genérica: permite aplicar una tarifa ingresada por el usuario. La retención real depende del concepto, base, sujeto y normativa aplicable.</p>
+          <div class="form-grid">
+            <div class="field"><label>Base ($ COP)</label><input id="retBase" type="number" value="2000000" min="0" step="1000"></div>
+            <div class="field"><label>Tarifa (%)</label><input id="retRate" type="number" value="2.5" min="0" step="0.01"></div>
+          </div>
+          <button class="btn btn-green" style="margin-top:18px" onclick="calcRet()">Calcular</button>
+          <div class="result" id="retResult"></div>
+        </div>
+
+        <div class="calc-panel" id="panel-interes">
+          <h3>Interés simple</h3><p>Calcula el interés estimado de una operación con tasa anual.</p>
+          <div class="form-grid">
+            <div class="field"><label>Capital ($ COP)</label><input id="intCapital" type="number" value="5000000" min="0" step="1000"></div>
+            <div class="field"><label>Tasa anual (%)</label><input id="intRate" type="number" value="12" min="0" step="0.01"></div>
+            <div class="field"><label>Tiempo (meses)</label><input id="intMonths" type="number" value="12" min="0" step="1"></div>
+          </div>
+          <button class="btn btn-green" style="margin-top:18px" onclick="calcInterest()">Calcular</button>
+          <div class="result" id="intResult"></div>
+        </div>
+
+        <div class="calc-panel" id="panel-prestamo">
+          <h3>Cuota mensual estimada</h3><p>Calcula la cuota aproximada de un crédito con cuota fija y tasa mensual.</p>
+          <div class="form-grid">
+            <div class="field"><label>Monto ($ COP)</label><input id="loanAmount" type="number" value="10000000" min="0" step="1000"></div>
+            <div class="field"><label>Tasa mensual (%)</label><input id="loanRate" type="number" value="1" min="0" step="0.01"></div>
+            <div class="field"><label>Número de cuotas</label><input id="loanMonths" type="number" value="24" min="1" step="1"></div>
+          </div>
+          <button class="btn btn-green" style="margin-top:18px" onclick="calcLoan()">Calcular cuota</button>
+          <div class="result" id="loanResult"></div>
+        </div>
+      </div>
+    </div>
+    <p class="disclaimer">Nota: las calculadoras son herramientas de orientación y no sustituyen la revisión de un contador público. Las tarifas, bases, topes y tratamientos tributarios pueden variar según la operación y la normativa vigente.</p>
+  </div>
+</section>
+
+<section class="section" id="libro">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Contenido y recursos</div>
+      <h2>Libro y conocimiento para empresarios</h2>
+      <p>Espacio preparado para presentar el libro, artículos, recursos descargables, consejos contables y material educativo de OFICONTAX.</p>
+    </div>
+    <div class="services">
+      <article class="service"><div class="icon">📖</div><h3>El Libro</h3><p>Presenta aquí el libro o publicación que quieras promocionar a tus clientes.</p><a href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20conocer%20el%20libro." target="_blank" class="service-link">Solicitar información →</a></article>
+      <article class="service"><div class="icon">💡</div><h3>Consejos contables</h3><p>Publica recomendaciones prácticas para emprendedores y Pymes.</p><a href="#contacto" class="service-link">Ver contenido →</a></article>
+      <article class="service"><div class="icon">📊</div><h3>Herramientas</h3><p>Calculadoras y recursos digitales para apoyar decisiones financieras.</p><a href="#calculadoras" class="service-link">Usar herramientas →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Preguntas frecuentes</div>
+      <h2>Resolvemos tus dudas</h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item"><button class="faq-q">¿OFICONTAX atiende Pymes y emprendedores? <span>＋</span></button><div class="faq-a">Sí. La página está orientada a presentar servicios contables y tributarios para emprendedores, Pymes y otros clientes que requieran acompañamiento profesional.</div></div>
+      <div class="faq-item"><button class="faq-q">¿Puedo solicitar asesoría por WhatsApp? <span>＋</span></button><div class="faq-a">Sí. Los botones de contacto abren WhatsApp con mensajes preparados según el servicio seleccionado.</div></div>
+      <div class="faq-item"><button class="faq-q">¿Los resultados de las calculadoras son definitivos? <span>＋</span></button><div class="faq-a">No. Son estimaciones. La aplicación de impuestos, retenciones, bases y demás obligaciones debe revisarse según el caso concreto y la normativa vigente.</div></div>
+      <div class="faq-item"><button class="faq-q">¿Puedo cambiar las tarifas de las calculadoras? <span>＋</span></button><div class="faq-a">Sí. Las calculadoras de IVA, retención y UVT permiten modificar los valores para que puedan actualizarse cuando cambie la normativa.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contacto">
+  <div class="container contact-grid">
+    <div>
+      <div class="eyebrow" style="color:#b9efcf">Hablemos</div>
+      <h2 style="font-size:44px;line-height:1.1;margin-bottom:16px">¿Necesitas asesoría contable o tributaria?</h2>
+      <p>Cuéntanos qué necesitas y recibe orientación para encontrar la solución adecuada para tu negocio.</p>
+      <div class="actions">
+        <a class="btn" style="background:#fff;color:var(--green)" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20recibir%20asesor%C3%ADa." target="_blank">💬 Hablar por WhatsApp</a>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h3>Información de contacto</h3>
+      <div class="contact-item"><div>📍</div><div><b>Oficina</b><span>Cra. 18 # 23-20 Of. 407-1, Sincelejo, Sucre, Colombia</span></div></div>
+      <div class="contact-item"><div>📱</div><div><b>WhatsApp</b><span>+57 302 397 1770</span></div></div>
+      <div class="contact-item"><div>✉️</div><div><b>Correo</b><span>oficontax@gmail.com</span></div></div>
+      <div class="contact-item"><div>◎</div><div><b>Redes</b><span>Instagram · Facebook · Linktree</span></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="logo" style="color:#fff"><div class="logo-mark" style="border-color:#9de1b8;color:#9de1b8">▥</div><div>OFICONTAX<small style="color:#9fb8aa">ASESORÍA CONTABLE Y TRIBUTARIA</small></div></div><p style="margin-top:15px;font-size:14px">Contabilidad, tributación y acompañamiento para empresarios.</p></div>
+    <div><h4>Enlaces</h4><a href="#quien-soy">Quien Soy</a><a href="#servicios">Servicios Contables</a><a href="#mentorias">Mentorías</a><a href="#libro">Libro</a><a href="#calculadoras">Calculadoras</a></div>
+    <div><h4>Redes y contacto</h4><a href="https://www.instagram.com/oficontax/" target="_blank">Instagram</a><a href="https://www.facebook.com/share/1Bq746Qgba/" target="_blank">Facebook</a><a href="https://linktr.ee/Oficontax" target="_blank">Linktree</a><a href="mailto:oficontax@gmail.com">Correo electrónico</a></div>
+  </div>
+  <div class="container copyright">© <span id="year"></span> OFICONTAX. Todos los derechos reservados.</div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="WhatsApp">◔</a>
+<div class="toast" id="toast">Resultado actualizado</div>
+
+<script>
+const money = n => new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(Math.round(n));
+const num = id => Number(document.getElementById(id).value) || 0;
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+document.getElementById('mobileBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+
+document.querySelectorAll('.calc-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.calc-tab').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.calc-panel').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+function show(id, html){document.getElementById(id).innerHTML=html; document.getElementById('toast').classList.add('show'); setTimeout(()=>document.getElementById('toast').classList.remove('show'),1300);}
+
+function calcIVA(){
+  const mode=document.getElementById('ivaMode').value, rate=num('ivaRate')/100, value=num('ivaBase');
+  let base, iva, total;
+  if(mode==='add'){base=value; iva=base*rate; total=base+iva}
+  else {total=value; base=total/(1+rate); iva=total-base}
+  show('ivaResult',`<div class="result-grid"><div><small>Base</small><strong>${money(base)}</strong></div><div><small>IVA</small><strong>${money(iva)}</strong></div><div><small>Total</small><strong>${money(total)}</strong></div></div>`);
+}
+function calcUVT(){
+  const value=num('uvtValue'), rate=num('uvtRate'), mode=document.getElementById('uvtMode').value;
+  if(mode==='toPesos') show('uvtResult',`<div><small>Resultado</small><strong>${money(value*rate)}</strong></div>`);
+  else show('uvtResult',`<div><small>Resultado</small><strong>${(value/rate).toLocaleString('es-CO',{maximumFractionDigits:2})} UVT</strong></div>`);
+}
+function calcRet(){
+  const base=num('retBase'), rate=num('retRate')/100, ret=base*rate, net=base-ret;
+  show('retResult',`<div class="result-grid"><div><small>Base</small><strong>${money(base)}</strong></div><div><small>Retención estimada</small><strong>${money(ret)}</strong></div><div><small>Neto estimado</small><strong>${money(net)}</strong></div></div>`);
+}
+function calcInterest(){
+  const capital=num('intCapital'), rate=num('intRate')/100, months=num('intMonths');
+  const interest=capital*rate*(months/12), total=capital+interest;
+  show('intResult',`<div class="result-grid"><div><small>Interés</small><strong>${money(interest)}</strong></div><div><small>Total</small><strong>${money(total)}</strong></div><div><small>Meses</small><strong>${months}</strong></div></div>`);
+}
+function calcLoan(){
+  const P=num('loanAmount'), r=num('loanRate')/100, n=Math.max(1,num('loanMonths'));
+  let payment;
+  if(r===0) payment=P/n; else payment=P*r/(1-Math.pow(1+r,-n));
+  const total=payment*n, interest=total-P;
+  show('loanResult',`<div class="result-grid"><div><small>Cuota mensual</small><strong>${money(payment)}</strong></div><div><small>Total pagado</small><strong>${money(total)}</strong></div><div><small>Intereses estimados</small><strong>${money(interest)}</strong></div></div>`);
+}
+
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{
+  const item=q.parentElement; item.classList.toggle('open'); q.querySelector('span').textContent=item.classList.contains('open')?'−':'＋';
+}));
+
+calcIVA();
+calcUVT();
+calcRet();
+calcInterest();
+calcLoan();
+</script>
+</body>
+</html>
