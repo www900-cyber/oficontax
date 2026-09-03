@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="OFICONTAX - Asesoría contable y tributaria para emprendedores y Pymes en Sincelejo, Sucre.">
+<meta name="description"
+content="OFICONTAX - Asesoría contable y tributaria para emprendedores y Pymes en Sincelejo, Sucre.">
 
 <meta name="theme-color" content="#0F9509">
 
 <title>OFICONTAX | Asesoría Contable y Tributaria</title>
+
 
 <style>
 
@@ -17,6 +21,7 @@
    ========================================================= */
 
 :root{
+
   --green:#0F9509;
   --green-dark:#087006;
   --green-deep:#064D04;
@@ -56,6 +61,7 @@ html{
 }
 
 body{
+
   font-family:
     Inter,
     system-ui,
@@ -67,7 +73,9 @@ body{
     sans-serif;
 
   color:var(--ink);
+
   background:#fff;
+
   line-height:1.6;
 }
 
@@ -83,7 +91,9 @@ select{
 }
 
 .container{
+
   width:min(1180px,92%);
+
   margin:auto;
 }
 
@@ -93,37 +103,54 @@ select{
    ========================================================= */
 
 .topbar{
+
   background:var(--green-deep);
+
   color:#fff;
+
   font-size:13px;
 }
 
 .topbar .container{
+
   min-height:40px;
+
   display:flex;
+
   align-items:center;
+
   justify-content:space-between;
+
   gap:20px;
 }
 
 .top-info{
+
   display:flex;
+
   gap:28px;
+
   flex-wrap:wrap;
 }
 
 .top-social{
+
   display:flex;
+
   gap:14px;
 }
 
 .top-social a{
+
   opacity:.9;
+
   transition:.2s;
 }
 
 .top-social a:hover{
+
   opacity:1;
+
   color:#fff;
 }
 
@@ -133,8 +160,11 @@ select{
    ========================================================= */
 
 .header{
+
   position:sticky;
+
   top:0;
+
   z-index:1000;
 
   background:rgba(255,255,255,.97);
@@ -147,10 +177,13 @@ select{
 }
 
 .nav{
+
   min-height:88px;
 
   display:flex;
+
   align-items:center;
+
   justify-content:space-between;
 
   gap:25px;
@@ -162,18 +195,24 @@ select{
    ========================================================= */
 
 .logo{
+
   display:flex;
+
   align-items:center;
+
   gap:10px;
 
   font-weight:900;
+
   color:var(--ink);
 
   flex-shrink:0;
 }
 
 .logo-img{
+
   width:125px;
+
   height:70px;
 
   object-fit:contain;
@@ -182,7 +221,9 @@ select{
 }
 
 .footer .logo-img{
+
   width:155px;
+
   height:100px;
 
   object-fit:contain;
@@ -194,13 +235,17 @@ select{
    ========================================================= */
 
 .menu{
+
   display:flex;
+
   align-items:center;
+
   gap:5px;
 }
 
 .menu a{
-  padding:31px 16px 27px;
+
+  padding:31px 13px 27px;
 
   font-weight:700;
 
@@ -213,10 +258,12 @@ select{
 
 .menu a:hover,
 .menu a.active{
+
   color:var(--green);
 }
 
 .menu a.active:after{
+
   content:"";
 
   position:absolute;
@@ -227,8 +274,9 @@ select{
 
   bottom:0;
 
-  left:16px;
-  right:16px;
+  left:13px;
+
+  right:13px;
 
   border-radius:3px;
 }
@@ -239,9 +287,11 @@ select{
    ========================================================= */
 
 .btn{
+
   display:inline-flex;
 
   align-items:center;
+
   justify-content:center;
 
   gap:9px;
@@ -260,42 +310,55 @@ select{
 }
 
 .btn-green{
+
   background:var(--green);
+
   color:#fff;
 
   box-shadow:0 8px 20px rgba(15,149,9,.22);
 }
 
 .btn-green:hover{
+
   background:var(--green-dark);
+
   transform:translateY(-2px);
 }
 
 .btn-orange{
+
   background:var(--orange);
+
   color:#fff;
 
   box-shadow:0 8px 20px rgba(241,111,10,.20);
 }
 
 .btn-orange:hover{
+
   background:var(--orange-dark);
+
   transform:translateY(-2px);
 }
 
 .btn-outline{
+
   border:1.5px solid var(--green);
+
   color:var(--green);
 
   background:#fff;
 }
 
 .btn-outline:hover{
+
   background:var(--green-light);
+
   transform:translateY(-2px);
 }
 
 .mobile-btn{
+
   display:none;
 
   background:none;
@@ -315,7 +378,9 @@ select{
    ========================================================= */
 
 .hero{
+
   background:
+
     radial-gradient(
       circle at 88% 18%,
       rgba(241,111,10,.09),
@@ -333,6 +398,7 @@ select{
 }
 
 .hero .container{
+
   min-height:610px;
 
   display:grid;
@@ -345,6 +411,7 @@ select{
 }
 
 .eyebrow{
+
   color:var(--green);
 
   font-weight:900;
@@ -359,6 +426,7 @@ select{
 }
 
 .hero h1{
+
   font-size:clamp(38px,5vw,64px);
 
   line-height:1.05;
@@ -369,10 +437,12 @@ select{
 }
 
 .hero h1 span{
+
   color:var(--green);
 }
 
 .hero p{
+
   font-size:18px;
 
   color:var(--muted);
@@ -381,6 +451,7 @@ select{
 }
 
 .actions{
+
   display:flex;
 
   gap:14px;
@@ -391,6 +462,7 @@ select{
 }
 
 .hero-points{
+
   display:flex;
 
   gap:24px;
@@ -407,6 +479,7 @@ select{
 }
 
 .hero-points span:before{
+
   content:"✓";
 
   display:inline-grid;
@@ -414,6 +487,7 @@ select{
   place-items:center;
 
   width:20px;
+
   height:20px;
 
   border-radius:50%;
@@ -427,10 +501,11 @@ select{
 
 
 /* =========================================================
-   HERO - ILUSTRACIÓN
+   HERO ILUSTRACIÓN
    ========================================================= */
 
 .hero-art{
+
   position:relative;
 
   min-height:490px;
@@ -441,6 +516,7 @@ select{
 }
 
 .hero-card{
+
   width:min(510px,100%);
 
   height:350px;
@@ -448,6 +524,7 @@ select{
   border-radius:32px;
 
   background:
+
     radial-gradient(
       circle at 85% 20%,
       rgba(241,111,10,.16),
@@ -468,12 +545,15 @@ select{
 }
 
 .laptop{
+
   position:absolute;
 
   left:50px;
+
   top:55px;
 
   width:410px;
+
   height:250px;
 
   background:#18231f;
@@ -488,6 +568,7 @@ select{
 }
 
 .screen{
+
   height:205px;
 
   border-radius:9px;
@@ -498,6 +579,7 @@ select{
 }
 
 .chart{
+
   height:125px;
 
   display:flex;
@@ -510,6 +592,7 @@ select{
 }
 
 .bar{
+
   width:35px;
 
   background:var(--green);
@@ -532,6 +615,7 @@ select{
 }
 
 .bar:nth-child(4){
+
   height:92%;
 
   background:var(--orange);
@@ -542,12 +626,15 @@ select{
 }
 
 .calc{
+
   position:absolute;
 
   right:38px;
+
   bottom:25px;
 
   width:125px;
+
   height:95px;
 
   background:#fff;
@@ -562,6 +649,7 @@ select{
 }
 
 .calc div{
+
   height:10px;
 
   background:#dce9e1;
@@ -572,6 +660,7 @@ select{
 }
 
 .calc div:last-child{
+
   background:var(--orange);
 
   width:70%;
@@ -583,9 +672,11 @@ select{
    ========================================================= */
 
 .floating{
+
   position:absolute;
 
   right:-5px;
+
   top:45px;
 
   background:var(--green-deep);
@@ -602,6 +693,7 @@ select{
 }
 
 .floating strong{
+
   display:block;
 
   font-size:18px;
@@ -614,6 +706,7 @@ select{
 }
 
 .floating p{
+
   font-size:14px;
 
   color:#eaf8f0;
@@ -625,11 +718,14 @@ select{
    ========================================================= */
 
 .section{
+
   padding:85px 0;
 }
 
 .section.soft{
+
   background:
+
     linear-gradient(
       180deg,
       #F7FBF6 0%,
@@ -638,6 +734,7 @@ select{
 }
 
 .section-head{
+
   text-align:center;
 
   max-width:750px;
@@ -646,6 +743,7 @@ select{
 }
 
 .section-head h2{
+
   font-size:clamp(30px,4vw,44px);
 
   line-height:1.1;
@@ -654,6 +752,7 @@ select{
 }
 
 .section-head p{
+
   color:var(--muted);
 }
 
@@ -663,6 +762,7 @@ select{
    ========================================================= */
 
 .features{
+
   display:grid;
 
   grid-template-columns:repeat(5,1fr);
@@ -671,6 +771,7 @@ select{
 }
 
 .feature{
+
   padding:27px 20px;
 
   background:#fff;
@@ -685,6 +786,7 @@ select{
 }
 
 .feature:hover{
+
   transform:translateY(-5px);
 
   box-shadow:var(--shadow-hover);
@@ -693,7 +795,9 @@ select{
 }
 
 .icon{
+
   width:54px;
+
   height:54px;
 
   margin:0 auto 15px;
@@ -715,6 +819,7 @@ select{
 
 .feature:nth-child(2) .icon,
 .feature:nth-child(4) .icon{
+
   color:var(--orange);
 
   border-color:#F6C6A2;
@@ -723,12 +828,14 @@ select{
 }
 
 .feature h3{
+
   font-size:17px;
 
   margin-bottom:9px;
 }
 
 .feature p{
+
   font-size:14px;
 
   color:var(--muted);
@@ -740,6 +847,7 @@ select{
    ========================================================= */
 
 .about-grid{
+
   display:grid;
 
   grid-template-columns:.85fr 1.15fr;
@@ -750,11 +858,13 @@ select{
 }
 
 .about-photo{
+
   min-height:470px;
 
   border-radius:30px;
 
   background:
+
     radial-gradient(
       circle at 20% 15%,
       rgba(241,111,10,.10),
@@ -783,6 +893,7 @@ select{
 }
 
 .about-photo img{
+
   width:100%;
 
   height:100%;
@@ -795,6 +906,7 @@ select{
 }
 
 .about-copy h2{
+
   font-size:42px;
 
   line-height:1.1;
@@ -803,12 +915,14 @@ select{
 }
 
 .about-copy p{
+
   color:var(--muted);
 
   margin-bottom:20px;
 }
 
 .badges{
+
   display:grid;
 
   grid-template-columns:repeat(3,1fr);
@@ -819,12 +933,14 @@ select{
 }
 
 .badge{
+
   font-weight:800;
 
   font-size:14px;
 }
 
 .badge span{
+
   display:block;
 
   color:var(--green);
@@ -835,6 +951,7 @@ select{
 }
 
 .badge:nth-child(2) span{
+
   color:var(--orange);
 }
 
@@ -844,6 +961,7 @@ select{
    ========================================================= */
 
 .services{
+
   display:grid;
 
   grid-template-columns:repeat(3,1fr);
@@ -852,6 +970,7 @@ select{
 }
 
 .service{
+
   background:#fff;
 
   border:1px solid var(--line);
@@ -870,11 +989,13 @@ select{
 }
 
 .service:before{
+
   content:"";
 
   position:absolute;
 
   top:0;
+
   left:0;
 
   width:100%;
@@ -891,6 +1012,7 @@ select{
 }
 
 .service:hover{
+
   transform:translateY(-5px);
 
   box-shadow:var(--shadow-hover);
@@ -899,22 +1021,26 @@ select{
 }
 
 .service:hover:before{
+
   transform:scaleX(1);
 }
 
 .service h3{
+
   font-size:20px;
 
   margin:12px 0 8px;
 }
 
 .service p{
+
   color:var(--muted);
 
   font-size:15px;
 }
 
 .service .service-link{
+
   display:inline-block;
 
   color:var(--green);
@@ -927,6 +1053,7 @@ select{
 }
 
 .service .service-link:hover{
+
   color:var(--orange);
 }
 
@@ -936,6 +1063,7 @@ select{
    ========================================================= */
 
 .calculator-wrap{
+
   display:grid;
 
   grid-template-columns:320px 1fr;
@@ -946,6 +1074,7 @@ select{
 }
 
 .calc-menu{
+
   background:#fff;
 
   border:1px solid var(--line);
@@ -958,6 +1087,7 @@ select{
 }
 
 .calc-tab{
+
   width:100%;
 
   text-align:left;
@@ -980,10 +1110,12 @@ select{
 }
 
 .calc-tab:hover{
+
   background:#f7faf6;
 }
 
 .calc-tab.active{
+
   background:var(--green-light);
 
   color:var(--green);
@@ -992,6 +1124,7 @@ select{
 }
 
 .calc-panel{
+
   display:none;
 
   background:#fff;
@@ -1006,22 +1139,26 @@ select{
 }
 
 .calc-panel.active{
+
   display:block;
 }
 
 .calc-panel h3{
+
   font-size:26px;
 
   margin-bottom:5px;
 }
 
 .calc-panel>p{
+
   color:var(--muted);
 
   margin-bottom:22px;
 }
 
 .form-grid{
+
   display:grid;
 
   grid-template-columns:repeat(2,1fr);
@@ -1030,6 +1167,7 @@ select{
 }
 
 .field label{
+
   display:block;
 
   font-size:13px;
@@ -1043,6 +1181,7 @@ select{
 
 .field input,
 .field select{
+
   width:100%;
 
   padding:13px 14px;
@@ -1060,19 +1199,23 @@ select{
 
 .field input:focus,
 .field select:focus{
+
   border-color:var(--green);
 
   box-shadow:0 0 0 3px var(--green-light);
 }
 
 .full{
+
   grid-column:1/-1;
 }
 
 .result{
+
   margin-top:24px;
 
   background:
+
     linear-gradient(
       135deg,
       var(--green-deep),
@@ -1091,11 +1234,13 @@ select{
 }
 
 .result:after{
+
   content:"";
 
   position:absolute;
 
   width:130px;
+
   height:130px;
 
   border-radius:50%;
@@ -1103,10 +1248,12 @@ select{
   background:rgba(241,111,10,.16);
 
   right:-50px;
+
   top:-50px;
 }
 
 .result-grid{
+
   display:grid;
 
   grid-template-columns:repeat(3,1fr);
@@ -1119,16 +1266,19 @@ select{
 }
 
 .result small{
+
   opacity:.8;
 }
 
 .result strong{
+
   display:block;
 
   font-size:23px;
 }
 
 .disclaimer{
+
   font-size:12px;
 
   color:#718078;
@@ -1138,20 +1288,500 @@ select{
 
 
 /* =========================================================
+   BIBLIOTECA DOCUMENTAL
+   ========================================================= */
+
+.library-section{
+
+  background:#fff;
+}
+
+.library-toolbar{
+
+  background:#fff;
+
+  border:1px solid var(--line);
+
+  border-radius:24px;
+
+  padding:22px;
+
+  box-shadow:var(--shadow);
+
+  margin-bottom:30px;
+}
+
+.library-search{
+
+  display:grid;
+
+  grid-template-columns:1fr auto;
+
+  gap:12px;
+
+  margin-bottom:18px;
+}
+
+.library-search input{
+
+  width:100%;
+
+  border:1px solid #cddbd3;
+
+  border-radius:12px;
+
+  padding:15px 18px;
+
+  outline:none;
+
+  font-size:16px;
+
+  transition:.2s;
+}
+
+.library-search input:focus{
+
+  border-color:var(--green);
+
+  box-shadow:0 0 0 4px var(--green-light);
+}
+
+.library-search button{
+
+  min-width:130px;
+}
+
+.library-filters{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:9px;
+}
+
+.library-filter{
+
+  border:1px solid #cbdccc;
+
+  background:#fff;
+
+  color:#506158;
+
+  border-radius:999px;
+
+  padding:9px 15px;
+
+  font-weight:800;
+
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.library-filter:hover{
+
+  border-color:var(--green);
+
+  color:var(--green);
+
+  background:var(--green-soft);
+}
+
+.library-filter.active{
+
+  background:var(--green);
+
+  color:#fff;
+
+  border-color:var(--green);
+}
+
+.library-info{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:15px;
+
+  margin:0 0 18px;
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  font-weight:700;
+}
+
+.library-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:20px;
+}
+
+.library-card{
+
+  background:#fff;
+
+  border:1px solid var(--line);
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  box-shadow:0 5px 18px rgba(0,0,0,.04);
+
+  transition:.25s;
+
+  display:flex;
+
+  flex-direction:column;
+}
+
+.library-card:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:var(--shadow-hover);
+
+  border-color:#B9DDB5;
+}
+
+.library-card-top{
+
+  min-height:125px;
+
+  background:
+
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(241,111,10,.14),
+      transparent 30%
+    ),
+
+    linear-gradient(
+      135deg,
+      var(--green-deep),
+      var(--green)
+    );
+
+  color:#fff;
+
+  padding:24px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:15px;
+}
+
+.pdf-icon{
+
+  width:60px;
+
+  height:60px;
+
+  border-radius:15px;
+
+  background:rgba(255,255,255,.15);
+
+  border:1px solid rgba(255,255,255,.25);
+
+  display:grid;
+
+  place-items:center;
+
+  font-size:30px;
+
+  flex-shrink:0;
+}
+
+.library-category{
+
+  font-size:11px;
+
+  font-weight:900;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+  opacity:.8;
+
+  margin-bottom:4px;
+}
+
+.library-card-body{
+
+  padding:22px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  flex:1;
+}
+
+.library-card h3{
+
+  font-size:19px;
+
+  line-height:1.25;
+
+  margin-bottom:9px;
+}
+
+.library-card p{
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  margin-bottom:18px;
+
+  flex:1;
+}
+
+.library-actions{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:9px;
+}
+
+.library-actions a,
+.library-actions button{
+
+  min-height:43px;
+
+  border-radius:9px;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:6px;
+
+  font-size:13px;
+
+  font-weight:800;
+
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.library-view{
+
+  border:1px solid var(--green);
+
+  color:var(--green);
+
+  background:#fff;
+}
+
+.library-view:hover{
+
+  background:var(--green-light);
+}
+
+.library-download{
+
+  border:1px solid var(--green);
+
+  background:var(--green);
+
+  color:#fff;
+}
+
+.library-download:hover{
+
+  background:var(--green-dark);
+}
+
+.library-empty{
+
+  display:none;
+
+  text-align:center;
+
+  padding:55px 20px;
+
+  border:1px dashed #bdd2bc;
+
+  border-radius:20px;
+
+  background:var(--green-soft);
+
+  color:var(--muted);
+}
+
+.library-empty.show{
+
+  display:block;
+}
+
+.library-empty-icon{
+
+  font-size:45px;
+
+  margin-bottom:10px;
+}
+
+.library-empty h3{
+
+  color:var(--green-deep);
+
+  margin-bottom:5px;
+}
+
+
+/* =========================================================
+   VISOR PDF
+   ========================================================= */
+
+.pdf-modal{
+
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,.78);
+
+  z-index:3000;
+
+  display:none;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:20px;
+}
+
+.pdf-modal.show{
+
+  display:flex;
+}
+
+.pdf-modal-box{
+
+  width:min(1100px,100%);
+
+  height:min(90vh,850px);
+
+  background:#fff;
+
+  border-radius:18px;
+
+  overflow:hidden;
+
+  display:flex;
+
+  flex-direction:column;
+
+  box-shadow:0 25px 80px rgba(0,0,0,.35);
+}
+
+.pdf-modal-header{
+
+  min-height:65px;
+
+  background:var(--green-deep);
+
+  color:#fff;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:15px;
+
+  padding:12px 18px;
+}
+
+.pdf-modal-title{
+
+  font-weight:900;
+
+  white-space:nowrap;
+
+  overflow:hidden;
+
+  text-overflow:ellipsis;
+}
+
+.pdf-modal-close{
+
+  width:40px;
+
+  height:40px;
+
+  border:0;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,.13);
+
+  color:#fff;
+
+  font-size:24px;
+
+  cursor:pointer;
+
+  flex-shrink:0;
+}
+
+.pdf-modal-close:hover{
+
+  background:var(--orange);
+}
+
+#pdfFrame{
+
+  width:100%;
+
+  flex:1;
+
+  border:0;
+
+  background:#eee;
+}
+
+
+/* =========================================================
    FAQ
    ========================================================= */
 
 .faq{
+
   max-width:850px;
 
   margin:auto;
 }
 
 .faq-item{
+
   border-bottom:1px solid var(--line);
 }
 
 .faq-q{
+
   width:100%;
 
   background:none;
@@ -1178,12 +1808,14 @@ select{
 }
 
 .faq-q span{
+
   color:var(--green);
 
   font-size:24px;
 }
 
 .faq-a{
+
   display:none;
 
   color:var(--muted);
@@ -1192,6 +1824,7 @@ select{
 }
 
 .faq-item.open .faq-a{
+
   display:block;
 }
 
@@ -1201,7 +1834,9 @@ select{
    ========================================================= */
 
 .contact{
+
   background:
+
     linear-gradient(
       135deg,
       var(--green-deep),
@@ -1212,6 +1847,7 @@ select{
 }
 
 .contact-grid{
+
   display:grid;
 
   grid-template-columns:1fr 1fr;
@@ -1222,10 +1858,12 @@ select{
 }
 
 .contact p{
+
   color:#d9f0e2;
 }
 
 .contact-card{
+
   background:#fff;
 
   color:var(--ink);
@@ -1238,10 +1876,12 @@ select{
 }
 
 .contact-card h3{
+
   color:var(--green-deep);
 }
 
 .contact-item{
+
   display:flex;
 
   gap:13px;
@@ -1250,14 +1890,17 @@ select{
 }
 
 .contact-item>div:first-child{
+
   font-size:20px;
 }
 
 .contact-item b{
+
   display:block;
 }
 
 .contact-item span{
+
   color:var(--muted);
 
   font-size:14px;
@@ -1269,6 +1912,7 @@ select{
    ========================================================= */
 
 .footer{
+
   background:#062F05;
 
   color:#dcece3;
@@ -1277,6 +1921,7 @@ select{
 }
 
 .footer-grid{
+
   display:grid;
 
   grid-template-columns:1.4fr 1fr 1fr;
@@ -1287,12 +1932,14 @@ select{
 }
 
 .footer h4{
+
   color:#fff;
 
   margin-bottom:12px;
 }
 
 .footer a{
+
   display:block;
 
   margin:7px 0;
@@ -1305,10 +1952,12 @@ select{
 }
 
 .footer a:hover{
+
   color:var(--orange);
 }
 
 .copyright{
+
   border-top:1px solid rgba(255,255,255,.12);
 
   margin-top:28px;
@@ -1324,7 +1973,7 @@ select{
 
 
 /* =========================================================
-   WHATSAPP FLOTANTE
+   WHATSAPP
    ========================================================= */
 
 .float-wa{
@@ -1340,7 +1989,7 @@ select{
 
   border-radius:50%;
 
-  background:#16a65a;
+  background:#25D366;
 
   color:#fff;
 
@@ -1348,14 +1997,35 @@ select{
 
   place-items:center;
 
-  font-size:27px;
-
-  box-shadow:0 12px 30px rgba(0,0,0,.2);
+  box-shadow:0 12px 30px rgba(0,0,0,.20);
 
   transition:.25s;
+
+  text-decoration:none;
+}
+
+.float-wa svg{
+  width:32px;
+  height:32px;
+
+  display:block;
+
+  fill:currentColor;
 }
 
 .float-wa:hover{
+  transform:scale(1.10);
+
+  background:#20BD5A;
+
+  box-shadow:0 15px 35px rgba(0,0,0,.28);
+}
+
+.float-wa:active{
+  transform:scale(.96);
+}
+.float-wa:hover{
+
   transform:scale(1.08);
 
   box-shadow:0 15px 35px rgba(0,0,0,.28);
@@ -1367,9 +2037,11 @@ select{
    ========================================================= */
 
 .toast{
+
   position:fixed;
 
   left:50%;
+
   bottom:25px;
 
   transform:translate(-50%,30px);
@@ -1388,10 +2060,11 @@ select{
 
   transition:.25s;
 
-  z-index:1500;
+  z-index:4000;
 }
 
 .toast.show{
+
   opacity:1;
 
   transform:translate(-50%,0);
@@ -1405,17 +2078,27 @@ select{
 @media(max-width:1100px){
 
   .menu a{
-    padding-left:10px;
-    padding-right:10px;
+
+    padding-left:8px;
+
+    padding-right:8px;
   }
 
   .menu a.active:after{
-    left:10px;
-    right:10px;
+
+    left:8px;
+
+    right:8px;
   }
 
   .features{
+
     grid-template-columns:repeat(3,1fr);
+  }
+
+  .library-grid{
+
+    grid-template-columns:repeat(2,1fr);
   }
 
 }
@@ -1428,14 +2111,17 @@ select{
 @media(max-width:1000px){
 
   .menu{
+
     display:none;
   }
 
   .mobile-btn{
+
     display:block;
   }
 
   .nav.open .menu{
+
     display:flex;
 
     position:absolute;
@@ -1443,6 +2129,7 @@ select{
     top:88px;
 
     left:0;
+
     right:0;
 
     background:#fff;
@@ -1459,34 +2146,42 @@ select{
   }
 
   .nav.open .menu a{
+
     padding:14px 18px;
   }
 
   .nav.open .menu a.active:after{
+
     display:none;
   }
 
   .hero{
+
     padding-top:35px;
   }
 
   .hero .container{
+
     grid-template-columns:1fr;
   }
 
   .hero-art{
+
     min-height:430px;
   }
 
   .services{
+
     grid-template-columns:repeat(2,1fr);
   }
 
   .calculator-wrap{
+
     grid-template-columns:1fr;
   }
 
   .calc-menu{
+
     display:grid;
 
     grid-template-columns:repeat(2,1fr);
@@ -1502,65 +2197,84 @@ select{
 @media(max-width:650px){
 
   .topbar .container{
+
     padding:8px 0;
   }
 
   .top-info{
+
     gap:5px 15px;
   }
 
   .top-social{
+
     display:none;
   }
 
   .header .nav{
+
     min-height:78px;
   }
 
   .logo-img{
+
     width:110px;
+
     height:62px;
   }
 
   .nav.open .menu{
+
     top:78px;
   }
 
   .hero h1{
+
     font-size:42px;
   }
 
   .hero-art{
+
     min-height:350px;
   }
 
   .hero-card{
+
     height:275px;
   }
 
   .laptop{
+
     left:15px;
+
     top:45px;
 
     width:320px;
+
     height:190px;
   }
 
   .screen{
+
     height:155px;
   }
 
   .chart{
+
     height:90px;
   }
 
   .calc{
+
     right:10px;
+
     bottom:10px;
   }
 
   .floating{
+
     right:0;
+
     top:10px;
 
     width:175px;
@@ -1569,6 +2283,7 @@ select{
   }
 
   .floating strong{
+
     font-size:15px;
   }
 
@@ -1576,54 +2291,107 @@ select{
   .services,
   .about-grid,
   .contact-grid{
+
     grid-template-columns:1fr;
   }
 
   .badges,
   .result-grid,
   .form-grid{
+
     grid-template-columns:1fr;
   }
 
   .section{
+
     padding:65px 0;
   }
 
   .about-photo{
+
     min-height:330px;
   }
 
   .calc-menu{
+
     grid-template-columns:1fr;
   }
 
   .calc-panel{
+
     padding:22px;
   }
 
   .footer-grid{
+
     grid-template-columns:1fr;
   }
 
   .footer .logo-img{
+
     width:145px;
+
     height:90px;
   }
 
   .btn{
+
     width:100%;
   }
 
   .actions{
+
     flex-direction:column;
   }
 
   .float-wa{
+
     right:16px;
+
     bottom:16px;
 
     width:54px;
+
     height:54px;
+  }
+
+  .library-search{
+
+    grid-template-columns:1fr;
+  }
+
+  .library-search button{
+
+    width:100%;
+  }
+
+  .library-grid{
+
+    grid-template-columns:1fr;
+  }
+
+  .library-actions{
+
+    grid-template-columns:1fr;
+  }
+
+  .library-info{
+
+    align-items:flex-start;
+
+    flex-direction:column;
+  }
+
+  .pdf-modal{
+
+    padding:8px;
+  }
+
+  .pdf-modal-box{
+
+    height:94vh;
+
+    border-radius:12px;
   }
 
 }
@@ -1634,13 +2402,18 @@ select{
    ========================================================= */
 
 @keyframes fadeUp{
+
   from{
+
     opacity:0;
+
     transform:translateY(20px);
   }
 
   to{
+
     opacity:1;
+
     transform:translateY(0);
   }
 }
@@ -1648,18 +2421,22 @@ select{
 .hero h1,
 .hero p,
 .hero .actions{
+
   animation:fadeUp .7s ease both;
 }
 
 .hero p{
+
   animation-delay:.1s;
 }
 
 .hero .actions{
+
   animation-delay:.2s;
 }
 
 </style>
+
 </head>
 
 
@@ -1696,21 +2473,27 @@ select{
         href="https://www.instagram.com/oficontax/"
         target="_blank"
         rel="noopener">
+
         Instagram
+
       </a>
 
       <a
         href="https://www.facebook.com/share/1Bq746Qgba/"
         target="_blank"
         rel="noopener">
+
         Facebook
+
       </a>
 
       <a
         href="https://linktr.ee/Oficontax"
         target="_blank"
         rel="noopener">
+
         Linktree
+
       </a>
 
     </div>
@@ -1718,6 +2501,7 @@ select{
   </div>
 
 </div>
+
 
 
 <!-- =====================================================
@@ -1759,7 +2543,7 @@ select{
       </a>
 
       <a href="#servicios">
-        Servicios Contables
+        Servicios
       </a>
 
       <a href="#mentorias">
@@ -1768,6 +2552,10 @@ select{
 
       <a href="#libro">
         Libro
+      </a>
+
+      <a href="#biblioteca">
+        Biblioteca
       </a>
 
       <a href="#calculadoras">
@@ -1811,14 +2599,21 @@ select{
       </div>
 
       <h1>
+
         Asesoría contable y tributaria para
-        <span>hacer crecer tu empresa</span>
+
+        <span>
+          hacer crecer tu empresa
+        </span>
+
       </h1>
 
       <p>
+
         Ayudamos a emprendedores y Pymes a mantener
         su contabilidad organizada, cumplir sus
         obligaciones y tomar mejores decisiones financieras.
+
       </p>
 
 
@@ -1886,9 +2681,13 @@ select{
             <div class="chart">
 
               <i class="bar"></i>
+
               <i class="bar"></i>
+
               <i class="bar"></i>
+
               <i class="bar"></i>
+
               <i class="bar"></i>
 
             </div>
@@ -1901,8 +2700,11 @@ select{
         <div class="calc">
 
           <div></div>
+
           <div></div>
+
           <div></div>
+
           <div></div>
 
         </div>
@@ -1913,12 +2715,16 @@ select{
       <div class="floating">
 
         <strong>
+
           Especialistas en RST y Régimen Especial
+
         </strong>
 
         <p>
+
           Formalizamos Pymes y gestionamos tus
           trámites tributarios.
+
         </p>
 
       </div>
@@ -1946,21 +2752,27 @@ select{
       </div>
 
       <h2>
+
         Somos tu
+
         <span style="color:var(--green)">
           aliado estratégico
         </span>
+
       </h2>
 
       <p>
+
         Soluciones contables y tributarias adaptadas
         a las necesidades de tu negocio.
+
       </p>
 
     </div>
 
 
     <div class="features">
+
 
       <article class="feature">
 
@@ -2088,11 +2900,13 @@ select{
       </h2>
 
       <p>
+
         Soy contador público con enfoque en asesoría
         contable y tributaria para Pymes y emprendedores.
         Mi misión es acompañarte para que tu empresa sea
         más rentable, eficiente y cumpla adecuadamente
         con sus obligaciones.
+
       </p>
 
 
@@ -2153,8 +2967,10 @@ select{
       </h2>
 
       <p>
+
         Selecciona el servicio que necesitas y solicita
         orientación directamente por WhatsApp.
+
       </p>
 
     </div>
@@ -2174,17 +2990,18 @@ select{
         </h3>
 
         <p>
-          Oficontax ofrece una gestión experta 
-	para la gestión de los diferentes 
-	trámites tributarios y comerciales 
-	que exige el entorno, brindamos un servicio 
-	eficiente y oportuno que garantiza 
-	su correcto cumplimiento.
+
+          Oficontax ofrece una gestión experta para la
+          gestión de los diferentes trámites tributarios
+          y comerciales que exige el entorno, brindamos
+          un servicio eficiente y oportuno que garantiza
+          su correcto cumplimiento.
+
         </p>
 
         <a
           class="service-link"
-          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20me%20interesa%20el%20servicio%20de%20Contabilidad."
+          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20me%20interesa%20el%20servicio%20de%20tr%C3%A1mites%20tributarios."
           target="_blank"
           rel="noopener">
 
@@ -2207,16 +3024,15 @@ select{
         </h3>
 
         <p>
-          En Oficontax brindamos asesoría 
-	tributaria integral para garantizar 
-	que cumpla con todas las obligaciones 
-	fiscales y aproveches al máximo los 
-	beneficios tributarios, Nuestro equipo 
-	ofrece orientación especializada sobre la 
-	legislación vigente, la resolución de dudas 
-	y la preparación de declaraciones 
-	asegurando una gestión tributaria 
-	precisa y eficiente.
+
+          En Oficontax brindamos asesoría tributaria
+          integral para garantizar que cumpla con todas
+          las obligaciones fiscales y aproveches al máximo
+          los beneficios tributarios. Nuestro equipo ofrece
+          orientación especializada sobre la legislación
+          vigente, resolución de dudas y preparación de
+          declaraciones.
+
         </p>
 
         <a
@@ -2244,12 +3060,18 @@ select{
         </h3>
 
         <p>
-          En Oficontax ofrecemos un servicio integral para la implementación de la facturación electrónica y la evolución a la digitalización fiscal. Nuestro equipo se encarga de todo el proceso, desde la configuración inicial hasta la puesta en marcha, asegurando una transición fluida y sin interrupciones para su negocio. Con nuestra solución, podrá cumplir con la normativa vigente y optimizar sus procesos contables, de facturación y demás documentos electrónicos fiscales de manera eficiente y segura.
+
+          En Oficontax ofrecemos un servicio integral para
+          la implementación de la facturación electrónica y
+          la evolución a la digitalización fiscal. Nuestro
+          equipo se encarga de todo el proceso, desde la
+          configuración inicial hasta la puesta en marcha.
+
         </p>
 
         <a
           class="service-link"
-          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20informaci%C3%B3n%20sobre%20RST."
+          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20informaci%C3%B3n%20sobre%20Digitalizaci%C3%B3n%20Fiscal."
           target="_blank"
           rel="noopener">
 
@@ -2272,12 +3094,17 @@ select{
         </h3>
 
         <p>
-          En Oficontax ofrecemos un servicio de asesoría especializada en formalización empresarial, guiando a emprendedores y negocios en el proceso de constituir y legalizar su actividad. Nuestro equipo le brindará el acompañamiento necesario para elegir la estructura jurídica adecuada, realizar los registros pertinentes y cumplir con todas las exigencias legales, asegurando un inicio sólido para su empresa.
+
+          En Oficontax ofrecemos un servicio de asesoría
+          especializada en formalización empresarial,
+          guiando a emprendedores y negocios en el proceso
+          de constituir y legalizar su actividad.
+
         </p>
 
         <a
           class="service-link"
-          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20informaci%C3%B3n%20sobre%20R%C3%A9gimen%20Especial."
+          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20formalizar%20mi%20empresa."
           target="_blank"
           rel="noopener">
 
@@ -2300,20 +3127,21 @@ select{
         </h3>
 
         <p>
-         -  Activacion en el SECOP II
 
-	<p> - Registro en el SIMO </p>
-	<p> - Inscripciones a pruebas ICFES </p>
-	<p> - Registro en el SIGEP
-	<p> - Declaraciones de Bienes y Rentas
-	<p> - Solicitud de retiro de Cesantias
-	<p> -Certificados de Libertad y Tradición
-	<p> - Certificados Mercantiles
+          Activación en el SECOP II<br>
+          Registro en el SIMO<br>
+          Inscripciones a pruebas ICFES<br>
+          Registro en el SIGEP<br>
+          Declaraciones de Bienes y Rentas<br>
+          Solicitud de retiro de Cesantías<br>
+          Certificados de Libertad y Tradición<br>
+          Certificados Mercantiles
+
         </p>
 
         <a
           class="service-link"
-          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20formalizar%20mi%20empresa."
+          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20informaci%C3%B3n%20sobre%20otros%20tr%C3%A1mites."
           target="_blank"
           rel="noopener">
 
@@ -2323,9 +3151,741 @@ select{
 
       </article>
 
+    </div>
+
+  </div>
+
+</section>
 
 
-     
+
+<!-- =====================================================
+     LIBRO
+     ===================================================== -->
+
+<section class="section soft" id="libro">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Contenido y recursos
+      </div>
+
+      <h2>
+        Libro y conocimiento para empresarios
+      </h2>
+
+      <p>
+
+        Espacio preparado para presentar el libro,
+        artículos, recursos descargables, consejos
+        contables y material educativo de OFICONTAX.
+
+      </p>
+
+    </div>
+
+
+    <div class="services">
+
+
+      <article class="service">
+
+        <div class="icon">
+          📖
+        </div>
+
+        <h3>
+          El Libro
+        </h3>
+
+        <p>
+
+          Presenta aquí el libro o publicación que
+          quieras promocionar a tus clientes.
+
+        </p>
+
+        <a
+          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20conocer%20el%20libro."
+          target="_blank"
+          rel="noopener"
+          class="service-link">
+
+          Solicitar información →
+
+        </a>
+
+      </article>
+
+
+      <article class="service">
+
+        <div class="icon">
+          💡
+        </div>
+
+        <h3>
+          Consejos contables
+        </h3>
+
+        <p>
+
+          Publica recomendaciones prácticas para
+          emprendedores y Pymes.
+
+        </p>
+
+        <a
+          href="#biblioteca"
+          class="service-link">
+
+          Ver recursos →
+
+        </a>
+
+      </article>
+
+
+      <article class="service">
+
+        <div class="icon">
+          📊
+        </div>
+
+        <h3>
+          Herramientas
+        </h3>
+
+        <p>
+
+          Calculadoras y recursos digitales para
+          apoyar decisiones financieras.
+
+        </p>
+
+        <a
+          href="#calculadoras"
+          class="service-link">
+
+          Usar herramientas →
+
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BIBLIOTECA DOCUMENTAL OFICONTAX
+     ===================================================== -->
+
+<section class="section library-section" id="biblioteca">
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Biblioteca OFICONTAX
+      </div>
+
+      <h2>
+        Documentos y recursos para nuestros clientes
+      </h2>
+
+      <p>
+
+        Consulta, visualiza y descarga documentos
+        contables, tributarios, empresariales y
+        material de apoyo.
+
+      </p>
+
+    </div>
+
+
+    <!-- BUSCADOR -->
+
+    <div class="library-toolbar">
+
+      <div class="library-search">
+
+        <input
+          type="search"
+          id="librarySearch"
+          placeholder="🔎 Buscar por nombre, tema o descripción..."
+          autocomplete="off">
+
+        <button
+          type="button"
+          class="btn btn-green"
+          id="clearLibrarySearch">
+
+          Limpiar
+
+        </button>
+
+      </div>
+
+
+      <!-- FILTROS -->
+
+      <div class="library-filters">
+
+        <button
+          class="library-filter active"
+          data-category="Todos">
+
+          Todos
+
+        </button>
+
+        <button
+          class="library-filter"
+          data-category="Tributaria">
+
+          Tributaria
+
+        </button>
+
+        <button
+          class="library-filter"
+          data-category="Contabilidad">
+
+          Contabilidad
+
+        </button>
+
+        <button
+          class="library-filter"
+          data-category="DIAN">
+
+          DIAN
+
+        </button>
+
+        <button
+          class="library-filter"
+          data-category="Empresarial">
+
+          Empresarial
+
+        </button>
+
+        <button
+          class="library-filter"
+          data-category="Laboral">
+
+          Laboral
+
+        </button>
+
+        <button
+          class="library-filter"
+          data-category="Guías">
+
+          Guías
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="library-info">
+
+      <span id="libraryCount">
+        Mostrando documentos
+      </span>
+
+      <span>
+        📚 Biblioteca digital OFICONTAX
+      </span>
+
+    </div>
+
+
+    <!-- =================================================
+         DOCUMENTOS
+         ================================================= -->
+
+    <div
+      class="library-grid"
+      id="libraryGrid">
+
+
+      <!-- DOCUMENTO 1 -->
+
+      <article
+        class="library-card"
+        data-category="Tributaria"
+        data-search="declaracion renta personas naturales renta tributaria impuestos guía">
+
+        <div class="library-card-top">
+
+          <div>
+
+            <div class="library-category">
+              Tributaria
+            </div>
+
+            <strong>
+              Documento PDF
+            </strong>
+
+          </div>
+
+          <div class="pdf-icon">
+            📄
+          </div>
+
+        </div>
+
+
+        <div class="library-card-body">
+
+          <h3>
+            Guía básica de Declaración de Renta
+          </h3>
+
+          <p>
+
+            Material informativo para conocer aspectos
+            generales relacionados con la declaración
+            de renta.
+
+          </p>
+
+
+          <div class="library-actions">
+
+            <button
+              type="button"
+              class="library-view"
+              onclick="openPDF(
+                'Guía básica de Declaración de Renta',
+                'pdfs/declaracion-renta.pdf'
+              )">
+
+              👁️ Ver PDF
+
+            </button>
+
+            <a
+              class="library-download"
+              href="pdfs/declaracion-renta.pdf"
+              download>
+
+              ⬇️ Descargar
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- DOCUMENTO 2 -->
+
+      <article
+        class="library-card"
+        data-category="DIAN"
+        data-search="rut dian registro único tributario inscripción actualización guía dian">
+
+        <div class="library-card-top">
+
+          <div>
+
+            <div class="library-category">
+              DIAN
+            </div>
+
+            <strong>
+              Documento PDF
+            </strong>
+
+          </div>
+
+          <div class="pdf-icon">
+            📄
+          </div>
+
+        </div>
+
+
+        <div class="library-card-body">
+
+          <h3>
+            Guía sobre el RUT
+          </h3>
+
+          <p>
+
+            Información general sobre el Registro Único
+            Tributario y algunos de sus principales
+            procesos.
+
+          </p>
+
+
+          <div class="library-actions">
+
+            <button
+              type="button"
+              class="library-view"
+              onclick="openPDF(
+                'Guía sobre el RUT',
+                'pdfs/guia-rut.pdf'
+              )">
+
+              👁️ Ver PDF
+
+            </button>
+
+            <a
+              class="library-download"
+              href="pdfs/guia-rut.pdf"
+              download>
+
+              ⬇️ Descargar
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- DOCUMENTO 3 -->
+
+      <article
+        class="library-card"
+        data-category="Empresarial"
+        data-search="formalización empresa emprendimiento empresario crear empresa colombia cámara comercio">
+
+        <div class="library-card-top">
+
+          <div>
+
+            <div class="library-category">
+              Empresarial
+            </div>
+
+            <strong>
+              Documento PDF
+            </strong>
+
+          </div>
+
+          <div class="pdf-icon">
+            📄
+          </div>
+
+        </div>
+
+
+        <div class="library-card-body">
+
+          <h3>
+            Guía de Formalización Empresarial
+          </h3>
+
+          <p>
+
+            Recurso de orientación para emprendedores
+            interesados en formalizar su actividad
+            empresarial.
+
+          </p>
+
+
+          <div class="library-actions">
+
+            <button
+              type="button"
+              class="library-view"
+              onclick="openPDF(
+                'Guía de Formalización Empresarial',
+                'pdfs/formalizacion-empresarial.pdf'
+              )">
+
+              👁️ Ver PDF
+
+            </button>
+
+            <a
+              class="library-download"
+              href="pdfs/formalizacion-empresarial.pdf"
+              download>
+
+              ⬇️ Descargar
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- DOCUMENTO 4 -->
+
+      <article
+        class="library-card"
+        data-category="Contabilidad"
+        data-search="contabilidad conceptos básicos contable empresa registros estados financieros">
+
+        <div class="library-card-top">
+
+          <div>
+
+            <div class="library-category">
+              Contabilidad
+            </div>
+
+            <strong>
+              Documento PDF
+            </strong>
+
+          </div>
+
+          <div class="pdf-icon">
+            📄
+          </div>
+
+        </div>
+
+
+        <div class="library-card-body">
+
+          <h3>
+            Conceptos básicos de contabilidad
+          </h3>
+
+          <p>
+
+            Material educativo para comprender conceptos
+            esenciales de contabilidad empresarial.
+
+          </p>
+
+
+          <div class="library-actions">
+
+            <button
+              type="button"
+              class="library-view"
+              onclick="openPDF(
+                'Conceptos básicos de contabilidad',
+                'pdfs/conceptos-contabilidad.pdf'
+              )">
+
+              👁️ Ver PDF
+
+            </button>
+
+            <a
+              class="library-download"
+              href="pdfs/conceptos-contabilidad.pdf"
+              download>
+
+              ⬇️ Descargar
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- DOCUMENTO 5 -->
+
+      <article
+        class="library-card"
+        data-category="Laboral"
+        data-search="laboral empleados nómina prestaciones contrato trabajo guía">
+
+        <div class="library-card-top">
+
+          <div>
+
+            <div class="library-category">
+              Laboral
+            </div>
+
+            <strong>
+              Documento PDF
+            </strong>
+
+          </div>
+
+          <div class="pdf-icon">
+            📄
+          </div>
+
+        </div>
+
+
+        <div class="library-card-body">
+
+          <h3>
+            Guía de conceptos laborales
+          </h3>
+
+          <p>
+
+            Recurso informativo sobre conceptos generales
+            relacionados con las obligaciones laborales.
+
+          </p>
+
+
+          <div class="library-actions">
+
+            <button
+              type="button"
+              class="library-view"
+              onclick="openPDF(
+                'Guía de conceptos laborales',
+                'pdfs/guia-laboral.pdf'
+              )">
+
+              👁️ Ver PDF
+
+            </button>
+
+            <a
+              class="library-download"
+              href="pdfs/guia-laboral.pdf"
+              download>
+
+              ⬇️ Descargar
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- DOCUMENTO 6 -->
+
+      <article
+        class="library-card"
+        data-category="Guías"
+        data-search="emprendedor guía negocio empresa finanzas administración consejos">
+
+        <div class="library-card-top">
+
+          <div>
+
+            <div class="library-category">
+              Guías
+            </div>
+
+            <strong>
+              Documento PDF
+            </strong>
+
+          </div>
+
+          <div class="pdf-icon">
+            📄
+          </div>
+
+        </div>
+
+
+        <div class="library-card-body">
+
+          <h3>
+            Guía para emprendedores
+          </h3>
+
+          <p>
+
+            Recomendaciones generales para organizar
+            y fortalecer la gestión de un emprendimiento.
+
+          </p>
+
+
+          <div class="library-actions">
+
+            <button
+              type="button"
+              class="library-view"
+              onclick="openPDF(
+                'Guía para emprendedores',
+                'pdfs/guia-emprendedores.pdf'
+              )">
+
+              👁️ Ver PDF
+
+            </button>
+
+            <a
+              class="library-download"
+              href="pdfs/guia-emprendedores.pdf"
+              download>
+
+              ⬇️ Descargar
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <!-- SIN RESULTADOS -->
+
+    <div
+      class="library-empty"
+      id="libraryEmpty">
+
+      <div class="library-empty-icon">
+        🔎
+      </div>
+
+      <h3>
+        No encontramos documentos
+      </h3>
+
+      <p>
+        Intenta realizar otra búsqueda o seleccionar
+        una categoría diferente.
+      </p>
+
     </div>
 
   </div>
@@ -2353,9 +3913,11 @@ select{
       </h2>
 
       <p>
+
         Realiza estimaciones rápidas directamente desde
         la página. Los resultados son informativos y deben
         validarse según cada situación particular.
+
       </p>
 
     </div>
@@ -2427,8 +3989,10 @@ select{
           </h3>
 
           <p>
+
             Calcula IVA sobre una base o descompone
             un precio que ya incluye IVA.
+
           </p>
 
 
@@ -2519,8 +4083,10 @@ select{
           </h3>
 
           <p>
+
             Para 2026 se usa una UVT de $52.374,
             según la Resolución DIAN 000238 de 2025.
+
           </p>
 
 
@@ -2611,10 +4177,12 @@ select{
           </h3>
 
           <p>
+
             Herramienta genérica: permite aplicar una
             tarifa ingresada por el usuario. La retención
             real depende del concepto, base, sujeto y
             normativa aplicable.
+
           </p>
 
 
@@ -2684,8 +4252,10 @@ select{
           </h3>
 
           <p>
+
             Calcula el interés estimado de una operación
             con tasa anual.
+
           </p>
 
 
@@ -2771,8 +4341,10 @@ select{
           </h3>
 
           <p>
+
             Calcula la cuota aproximada de un crédito
             con cuota fija y tasa mensual.
+
           </p>
 
 
@@ -2859,123 +4431,6 @@ select{
       la operación y la normativa vigente.
 
     </p>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     LIBRO
-     ===================================================== -->
-
-<section class="section" id="libro">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <div class="eyebrow">
-        Contenido y recursos
-      </div>
-
-      <h2>
-        Libro y conocimiento para empresarios
-      </h2>
-
-      <p>
-        Espacio preparado para presentar el libro,
-        artículos, recursos descargables, consejos
-        contables y material educativo de OFICONTAX.
-      </p>
-
-    </div>
-
-
-    <div class="services">
-
-
-      <article class="service">
-
-        <div class="icon">
-          📖
-        </div>
-
-        <h3>
-          El Libro
-        </h3>
-
-        <p>
-          Presenta aquí el libro o publicación que
-          quieras promocionar a tus clientes.
-        </p>
-
-        <a
-          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20conocer%20el%20libro."
-          target="_blank"
-          rel="noopener"
-          class="service-link">
-
-          Solicitar información →
-
-        </a>
-
-      </article>
-
-
-      <article class="service">
-
-        <div class="icon">
-          💡
-        </div>
-
-        <h3>
-          Consejos contables
-        </h3>
-
-        <p>
-          Publica recomendaciones prácticas para
-          emprendedores y Pymes.
-        </p>
-
-        <a
-          href="#contacto"
-          class="service-link">
-
-          Ver contenido →
-
-        </a>
-
-      </article>
-
-
-      <article class="service">
-
-        <div class="icon">
-          📊
-        </div>
-
-        <h3>
-          Herramientas
-        </h3>
-
-        <p>
-          Calculadoras y recursos digitales para
-          apoyar decisiones financieras.
-        </p>
-
-        <a
-          href="#calculadoras"
-          class="service-link">
-
-          Usar herramientas →
-
-        </a>
-
-      </article>
-
-    </div>
 
   </div>
 
@@ -3087,6 +4542,48 @@ select{
           Sí. Las calculadoras de IVA, retención y UVT
           permiten modificar los valores para que puedan
           actualizarse cuando cambie la normativa.
+
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-q">
+
+          ¿Puedo descargar documentos de la biblioteca?
+
+          <span>＋</span>
+
+        </button>
+
+        <div class="faq-a">
+
+          Sí. Los documentos disponibles en la Biblioteca
+          OFICONTAX pueden visualizarse directamente
+          desde la página y descargarse en formato PDF.
+
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-q">
+
+          ¿Puedo encontrar un documento específico?
+
+          <span>＋</span>
+
+        </button>
+
+        <div class="faq-a">
+
+          Sí. Utiliza el buscador de la biblioteca para
+          buscar por nombre, tema, descripción o palabras
+          relacionadas con el documento.
 
         </div>
 
@@ -3250,6 +4747,52 @@ select{
 
 
 <!-- =====================================================
+     VISOR PDF
+     ===================================================== -->
+
+<div
+  class="pdf-modal"
+  id="pdfModal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="pdfModalTitle">
+
+  <div class="pdf-modal-box">
+
+    <div class="pdf-modal-header">
+
+      <div
+        class="pdf-modal-title"
+        id="pdfModalTitle">
+
+        Documento PDF
+
+      </div>
+
+      <button
+        type="button"
+        class="pdf-modal-close"
+        id="pdfModalClose"
+        aria-label="Cerrar visor">
+
+        ×
+
+      </button>
+
+    </div>
+
+    <iframe
+      id="pdfFrame"
+      title="Visor de documento PDF">
+    </iframe>
+
+  </div>
+
+</div>
+
+
+
+<!-- =====================================================
      FOOTER
      ===================================================== -->
 
@@ -3279,7 +4822,7 @@ select{
       </a>
 
       <a href="#servicios">
-        Servicios Contables
+        Servicios
       </a>
 
       <a href="#mentorias">
@@ -3288,6 +4831,10 @@ select{
 
       <a href="#libro">
         Libro
+      </a>
+
+      <a href="#biblioteca">
+        Biblioteca
       </a>
 
       <a href="#calculadoras">
@@ -3356,17 +4903,33 @@ select{
      WHATSAPP FLOTANTE
      ===================================================== -->
 
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+     ===================================================== -->
+
 <a
   class="float-wa"
   href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20recibir%20informaci%C3%B3n."
   target="_blank"
   rel="noopener"
-  aria-label="WhatsApp">
+  aria-label="Contactar a OFICONTAX por WhatsApp"
+  title="Escríbenos por WhatsApp">
 
-  ☎
+  <svg
+    viewBox="0 0 32 32"
+    aria-hidden="true">
+
+    <path
+      fill="currentColor"
+      d="M19.11 17.21c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27s.98 2.63 1.11 2.81c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.66.21 1.26.18 1.73.11.53-.08 1.6-.66 1.82-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.32z"/>
+
+    <path
+      fill="currentColor"
+      d="M16.02 3C8.83 3 3 8.83 3 16.02c0 2.3.6 4.55 1.74 6.52L3 29l6.65-1.7a12.95 12.95 0 0 0 6.37 1.67h.01C23.21 28.97 29 23.14 29 16.02 29 8.83 23.19 3 16.02 3zm0 23.78h-.01a10.7 10.7 0 0 1-5.45-1.5l-.39-.23-3.95 1.01 1.05-3.84-.25-.4a10.75 10.75 0 1 1 9 4.96z"/>
+
+  </svg>
 
 </a>
-
 
 <div
   class="toast"
@@ -3584,24 +5147,49 @@ function calcIVA(){
     'ivaResult',
 
     `
+
     <div class="result-grid">
 
       <div>
-        <small>Base</small>
-        <strong>${money(base)}</strong>
+
+        <small>
+          Base
+        </small>
+
+        <strong>
+          ${money(base)}
+        </strong>
+
       </div>
 
-      <div>
-        <small>IVA</small>
-        <strong>${money(iva)}</strong>
-      </div>
 
       <div>
-        <small>Total</small>
-        <strong>${money(total)}</strong>
+
+        <small>
+          IVA
+        </small>
+
+        <strong>
+          ${money(iva)}
+        </strong>
+
+      </div>
+
+
+      <div>
+
+        <small>
+          Total
+        </small>
+
+        <strong>
+          ${money(total)}
+        </strong>
+
       </div>
 
     </div>
+
     `
   );
 
@@ -3630,6 +5218,7 @@ function calcUVT(){
       'uvtResult',
 
       `
+
       <div>
 
         <small>
@@ -3641,6 +5230,7 @@ function calcUVT(){
         </strong>
 
       </div>
+
       `
     );
 
@@ -3652,6 +5242,7 @@ function calcUVT(){
       'uvtResult',
 
       `
+
       <div>
 
         <small>
@@ -3659,6 +5250,7 @@ function calcUVT(){
         </small>
 
         <strong>
+
           ${
             (value / rate)
             .toLocaleString(
@@ -3668,10 +5260,13 @@ function calcUVT(){
               }
             )
           }
+
           UVT
+
         </strong>
 
       </div>
+
       `
     );
 
@@ -3703,24 +5298,49 @@ function calcRet(){
     'retResult',
 
     `
+
     <div class="result-grid">
 
       <div>
-        <small>Base</small>
-        <strong>${money(base)}</strong>
+
+        <small>
+          Base
+        </small>
+
+        <strong>
+          ${money(base)}
+        </strong>
+
       </div>
 
-      <div>
-        <small>Retención estimada</small>
-        <strong>${money(ret)}</strong>
-      </div>
 
       <div>
-        <small>Neto estimado</small>
-        <strong>${money(net)}</strong>
+
+        <small>
+          Retención estimada
+        </small>
+
+        <strong>
+          ${money(ret)}
+        </strong>
+
+      </div>
+
+
+      <div>
+
+        <small>
+          Neto estimado
+        </small>
+
+        <strong>
+          ${money(net)}
+        </strong>
+
       </div>
 
     </div>
+
     `
   );
 
@@ -3754,24 +5374,49 @@ function calcInterest(){
     'intResult',
 
     `
+
     <div class="result-grid">
 
       <div>
-        <small>Interés</small>
-        <strong>${money(interest)}</strong>
+
+        <small>
+          Interés
+        </small>
+
+        <strong>
+          ${money(interest)}
+        </strong>
+
       </div>
 
-      <div>
-        <small>Total</small>
-        <strong>${money(total)}</strong>
-      </div>
 
       <div>
-        <small>Meses</small>
-        <strong>${months}</strong>
+
+        <small>
+          Total
+        </small>
+
+        <strong>
+          ${money(total)}
+        </strong>
+
+      </div>
+
+
+      <div>
+
+        <small>
+          Meses
+        </small>
+
+        <strong>
+          ${months}
+        </strong>
+
       </div>
 
     </div>
+
     `
   );
 
@@ -3833,28 +5478,329 @@ function calcLoan(){
     'loanResult',
 
     `
+
     <div class="result-grid">
 
       <div>
-        <small>Cuota mensual</small>
-        <strong>${money(payment)}</strong>
+
+        <small>
+          Cuota mensual
+        </small>
+
+        <strong>
+          ${money(payment)}
+        </strong>
+
       </div>
 
-      <div>
-        <small>Total pagado</small>
-        <strong>${money(total)}</strong>
-      </div>
 
       <div>
-        <small>Intereses estimados</small>
-        <strong>${money(interest)}</strong>
+
+        <small>
+          Total pagado
+        </small>
+
+        <strong>
+          ${money(total)}
+        </strong>
+
+      </div>
+
+
+      <div>
+
+        <small>
+          Intereses estimados
+        </small>
+
+        <strong>
+          ${money(interest)}
+        </strong>
+
       </div>
 
     </div>
+
     `
   );
 
 }
+
+
+/* =====================================================
+   BIBLIOTECA - BÚSQUEDA
+   ===================================================== */
+
+const librarySearch =
+  document.getElementById('librarySearch');
+
+const libraryCards =
+  Array.from(
+    document.querySelectorAll('.library-card')
+  );
+
+const libraryFilters =
+  document.querySelectorAll('.library-filter');
+
+const libraryEmpty =
+  document.getElementById('libraryEmpty');
+
+const libraryCount =
+  document.getElementById('libraryCount');
+
+const clearLibrarySearch =
+  document.getElementById('clearLibrarySearch');
+
+let activeCategory = 'Todos';
+
+
+/* =====================================================
+   FILTRAR BIBLIOTECA
+   ===================================================== */
+
+function filterLibrary(){
+
+  const search =
+    librarySearch.value
+      .toLowerCase()
+      .trim();
+
+
+  let visible = 0;
+
+
+  libraryCards.forEach(card => {
+
+    const category =
+      card.dataset.category || '';
+
+    const searchText =
+      card.dataset.search || '';
+
+    const cardText =
+      card.innerText.toLowerCase();
+
+
+    const matchesCategory =
+      activeCategory === 'Todos' ||
+      category === activeCategory;
+
+
+    const matchesSearch =
+      search === '' ||
+      searchText.toLowerCase().includes(search) ||
+      cardText.includes(search);
+
+
+    if(
+      matchesCategory &&
+      matchesSearch
+    ){
+
+      card.style.display = '';
+
+      visible++;
+
+    }
+
+    else{
+
+      card.style.display = 'none';
+
+    }
+
+  });
+
+
+  if(visible === 0){
+
+    libraryEmpty.classList.add('show');
+
+  }
+
+  else{
+
+    libraryEmpty.classList.remove('show');
+
+  }
+
+
+  libraryCount.textContent =
+
+    visible === 1
+
+      ? '1 documento encontrado'
+
+      : `${visible} documentos encontrados`;
+
+}
+
+
+/* =====================================================
+   EVENTO BUSCADOR
+   ===================================================== */
+
+librarySearch.addEventListener(
+  'input',
+  filterLibrary
+);
+
+
+/* =====================================================
+   BOTÓN LIMPIAR
+   ===================================================== */
+
+clearLibrarySearch.addEventListener(
+  'click',
+  () => {
+
+    librarySearch.value = '';
+
+    activeCategory = 'Todos';
+
+
+    libraryFilters.forEach(
+      button => {
+
+        button.classList.remove('active');
+
+        if(
+          button.dataset.category === 'Todos'
+        ){
+
+          button.classList.add('active');
+
+        }
+
+      }
+    );
+
+
+    filterLibrary();
+
+    librarySearch.focus();
+
+  }
+);
+
+
+/* =====================================================
+   FILTROS POR CATEGORÍA
+   ===================================================== */
+
+libraryFilters.forEach(
+  button => {
+
+    button.addEventListener(
+      'click',
+      () => {
+
+        libraryFilters.forEach(
+          item =>
+            item.classList.remove('active')
+        );
+
+
+        button.classList.add('active');
+
+
+        activeCategory =
+          button.dataset.category;
+
+
+        filterLibrary();
+
+      }
+    );
+
+  }
+);
+
+
+/* =====================================================
+   VISOR PDF
+   ===================================================== */
+
+const pdfModal =
+  document.getElementById('pdfModal');
+
+const pdfFrame =
+  document.getElementById('pdfFrame');
+
+const pdfModalTitle =
+  document.getElementById('pdfModalTitle');
+
+const pdfModalClose =
+  document.getElementById('pdfModalClose');
+
+
+function openPDF(title, url){
+
+  pdfModalTitle.textContent = title;
+
+  pdfFrame.src = url;
+
+  pdfModal.classList.add('show');
+
+  document.body.style.overflow = 'hidden';
+
+}
+
+
+function closePDF(){
+
+  pdfModal.classList.remove('show');
+
+  pdfFrame.src = '';
+
+  document.body.style.overflow = '';
+
+}
+
+
+pdfModalClose.addEventListener(
+  'click',
+  closePDF
+);
+
+
+/* =====================================================
+   CERRAR VISOR AL HACER CLICK FUERA
+   ===================================================== */
+
+pdfModal.addEventListener(
+  'click',
+  event => {
+
+    if(event.target === pdfModal){
+
+      closePDF();
+
+    }
+
+  }
+);
+
+
+/* =====================================================
+   CERRAR VISOR CON ESC
+   ===================================================== */
+
+document.addEventListener(
+  'keydown',
+  event => {
+
+    if(
+      event.key === 'Escape' &&
+      pdfModal.classList.contains('show')
+    ){
+
+      closePDF();
+
+    }
+
+  }
+);
 
 
 /* =====================================================
@@ -3894,7 +5840,7 @@ document
 
 
 /* =====================================================
-   EJECUTAR CALCULADORAS AL CARGAR
+   EJECUTAR CALCULADORAS
    ===================================================== */
 
 calcIVA();
@@ -3906,6 +5852,13 @@ calcRet();
 calcInterest();
 
 calcLoan();
+
+
+/* =====================================================
+   INICIAR BIBLIOTECA
+   ===================================================== */
+
+filterLibrary();
 
 
 </script>
