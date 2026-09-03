@@ -156,6 +156,38 @@ button,input,select{font:inherit}
   .section{padding:65px 0}.about-photo{min-height:330px}.calc-menu{grid-template-columns:1fr}.calc-panel{padding:22px}
   .footer-grid{grid-template-columns:1fr}.btn{width:100%}.actions{flex-direction:column}
 }
+.about-photo{
+  min-height:470px;
+  border-radius:30px;
+  background:linear-gradient(145deg,#dff3e7,#f9fcfa);
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.about-photo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center bottom;
+  display:block;
+}
+
+/* LOGO OFICONTAX */
+.logo-img{
+  width:182px;
+  height:182px;
+  object-fit:contain;
+  display:block;
+}
+
+.footer .logo-img{
+  width:52px;
+  height:52px;
+}
 </style>
 </head>
 
@@ -177,10 +209,10 @@ button,input,select{font:inherit}
 
 <header class="header">
   <div class="container nav" id="nav">
-    <a class="logo" href="#inicio">
-      <div class="logo-mark">▥</div>
-      <div>OFICONTAX<small>ASESORÍA CONTABLE Y TRIBUTARIA</small></div>
-    </a>
+   <a class="logo" href="#inicio">
+  <img src="logo.png" class="logo-img" alt="Logo OFICONTAX">
+  
+</a>
     <button class="mobile-btn" id="mobileBtn" aria-label="Abrir menú">☰</button>
     <nav class="menu">
       <a href="#inicio" class="active">Inicio</a>
@@ -243,7 +275,9 @@ button,input,select{font:inherit}
 
 <section class="section soft" id="quien-soy">
   <div class="container about-grid">
-    <div class="about-photo"><div class="person">👨🏻‍💼</div></div>
+    <div class="about-photo">
+  <img src="contador.png" alt="Contador público de OFICONTAX">
+</div>
     <div class="about-copy">
       <div class="eyebrow">¿Quién soy?</div>
       <h2>Comprometido con el crecimiento de tu negocio</h2>
@@ -405,7 +439,10 @@ button,input,select{font:inherit}
 
 <footer class="footer">
   <div class="container footer-grid">
-    <div><div class="logo" style="color:#fff"><div class="logo-mark" style="border-color:#9de1b8;color:#9de1b8">▥</div><div>OFICONTAX<small style="color:#9fb8aa">ASESORÍA CONTABLE Y TRIBUTARIA</small></div></div><p style="margin-top:15px;font-size:14px">Contabilidad, tributación y acompañamiento para empresarios.</p></div>
+    <div class="logo" style="color:#fff">
+  <img src="logo.png" class="logo-img" alt="Logo OFICONTAX">
+  
+</div>
     <div><h4>Enlaces</h4><a href="#quien-soy">Quien Soy</a><a href="#servicios">Servicios Contables</a><a href="#mentorias">Mentorías</a><a href="#libro">Libro</a><a href="#calculadoras">Calculadoras</a></div>
     <div><h4>Redes y contacto</h4><a href="https://www.instagram.com/oficontax/" target="_blank">Instagram</a><a href="https://www.facebook.com/share/1Bq746Qgba/" target="_blank">Facebook</a><a href="https://linktr.ee/Oficontax" target="_blank">Linktree</a><a href="mailto:oficontax@gmail.com">Correo electrónico</a></div>
   </div>
