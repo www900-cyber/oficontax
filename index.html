@@ -1971,6 +1971,207 @@ select{
   color:#a9c0b4;
 }
 
+/* =========================================================
+   DESCARGA DE APP
+   ========================================================= */
+
+.app-download{
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(241,111,10,.15),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      var(--green-deep),
+      var(--green-dark)
+    );
+
+  color:#fff;
+
+  border-radius:28px;
+
+  padding:35px;
+
+  display:grid;
+
+  grid-template-columns:1.4fr .6fr;
+
+  align-items:center;
+
+  gap:30px;
+
+  box-shadow:0 20px 45px rgba(6,77,4,.18);
+
+  overflow:hidden;
+
+  position:relative;
+}
+
+.app-download:after{
+
+  content:"";
+
+  position:absolute;
+
+  width:220px;
+
+  height:220px;
+
+  border-radius:50%;
+
+  background:rgba(241,111,10,.10);
+
+  right:-80px;
+
+  bottom:-100px;
+}
+
+.app-download-content{
+
+  position:relative;
+
+  z-index:2;
+}
+
+.app-download .eyebrow{
+
+  color:#B9EFCF;
+
+  margin-bottom:8px;
+}
+
+.app-download h2{
+
+  font-size:clamp(28px,4vw,42px);
+
+  line-height:1.1;
+
+  margin-bottom:12px;
+}
+
+.app-download p{
+
+  color:#D9F0E2;
+
+  max-width:650px;
+
+  margin-bottom:22px;
+}
+
+.app-download-buttons{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+}
+
+.app-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:10px;
+
+  padding:13px 20px;
+
+  border-radius:11px;
+
+  font-weight:800;
+
+  transition:.25s;
+
+  cursor:pointer;
+
+}
+
+.app-btn-primary{
+
+  background:#fff;
+
+  color:var(--green-deep);
+
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.app-btn-primary:hover{
+
+  transform:translateY(-3px);
+
+  background:#F4FFF3;
+}
+
+.app-btn-secondary{
+
+  background:var(--orange);
+
+  color:#fff;
+
+  box-shadow:0 8px 20px rgba(241,111,10,.25);
+}
+
+.app-btn-secondary:hover{
+
+  background:var(--orange-dark);
+
+  transform:translateY(-3px);
+}
+
+.app-icon{
+
+  width:75px;
+
+  height:75px;
+
+  border-radius:20px;
+
+  background:rgba(255,255,255,.12);
+
+  border:1px solid rgba(255,255,255,.20);
+
+  display:grid;
+
+  place-items:center;
+
+  font-size:40px;
+
+  position:relative;
+
+  z-index:2;
+
+  justify-self:center;
+
+}
+
+.app-badge{
+
+  display:inline-block;
+
+  font-size:11px;
+
+  font-weight:900;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+  padding:5px 10px;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,.12);
+
+  color:#D9F0E2;
+
+  margin-bottom:12px;
+}
 
 /* =========================================================
    WHATSAPP
@@ -2395,6 +2596,45 @@ select{
   }
 
 }
+.app-download{
+
+  grid-template-columns:1fr;
+
+  padding:28px 22px;
+
+  text-align:center;
+
+}
+
+.app-download p{
+
+  margin-left:auto;
+
+  margin-right:auto;
+
+}
+
+.app-download-buttons{
+
+  flex-direction:column;
+
+}
+
+.app-btn{
+
+  width:100%;
+
+}
+
+.app-icon{
+
+  justify-self:center;
+
+  width:68px;
+
+  height:68px;
+
+}
 
 
 /* =========================================================
@@ -2550,16 +2790,17 @@ select{
         Mentorías
       </a>
 
-      <a href="#libro">
-        Libro
-      </a>
-
+      
       <a href="#biblioteca">
         Biblioteca
       </a>
 
       <a href="#calculadoras">
         Calculadoras
+      </a>
+
+      <a href="#app">
+       📱 App
       </a>
 
     </nav>
@@ -3156,133 +3397,6 @@ select{
   </div>
 
 </section>
-
-
-
-<!-- =====================================================
-     LIBRO
-     ===================================================== -->
-
-<section class="section soft" id="libro">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <div class="eyebrow">
-        Contenido y recursos
-      </div>
-
-      <h2>
-        Libro y conocimiento para empresarios
-      </h2>
-
-      <p>
-
-        Espacio preparado para presentar el libro,
-        artículos, recursos descargables, consejos
-        contables y material educativo de OFICONTAX.
-
-      </p>
-
-    </div>
-
-
-    <div class="services">
-
-
-      <article class="service">
-
-        <div class="icon">
-          📖
-        </div>
-
-        <h3>
-          El Libro
-        </h3>
-
-        <p>
-
-          Presenta aquí el libro o publicación que
-          quieras promocionar a tus clientes.
-
-        </p>
-
-        <a
-          href="https://wa.me/573023971770?text=Hola%20OFICONTAX%2C%20quiero%20conocer%20el%20libro."
-          target="_blank"
-          rel="noopener"
-          class="service-link">
-
-          Solicitar información →
-
-        </a>
-
-      </article>
-
-
-      <article class="service">
-
-        <div class="icon">
-          💡
-        </div>
-
-        <h3>
-          Consejos contables
-        </h3>
-
-        <p>
-
-          Publica recomendaciones prácticas para
-          emprendedores y Pymes.
-
-        </p>
-
-        <a
-          href="#biblioteca"
-          class="service-link">
-
-          Ver recursos →
-
-        </a>
-
-      </article>
-
-
-      <article class="service">
-
-        <div class="icon">
-          📊
-        </div>
-
-        <h3>
-          Herramientas
-        </h3>
-
-        <p>
-
-          Calculadoras y recursos digitales para
-          apoyar decisiones financieras.
-
-        </p>
-
-        <a
-          href="#calculadoras"
-          class="service-link">
-
-          Usar herramientas →
-
-        </a>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
 
 <!-- =====================================================
      BIBLIOTECA DOCUMENTAL OFICONTAX
@@ -3885,6 +3999,68 @@ select{
         Intenta realizar otra búsqueda o seleccionar
         una categoría diferente.
       </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     APLICACIÓN OFICONTAX
+     ===================================================== -->
+
+<section class="section soft" id="app">
+
+  <div class="container">
+
+    <div class="app-download">
+
+      <div class="app-download-content">
+
+        <div class="app-badge">
+          OFICONTAX DIGITAL
+        </div>
+
+        <div class="eyebrow">
+          Nuestra aplicación
+        </div>
+
+        <h2>
+          Lleva OFICONTAX contigo
+        </h2>
+
+        <p>
+          Accede fácilmente a nuestras herramientas,
+          servicios, información y recursos desde tu
+          dispositivo móvil.
+        </p>
+
+        <div class="app-download-buttons">
+
+          <!-- CAMBIA ESTE ENLACE POR EL DE TU APP -->
+
+          <a
+            href="app/oficontax.apk"
+            class="app-btn app-btn-primary"
+            download>
+
+            📱 Descargar App
+
+          </a>
+
+
+          
+        </div>
+
+      </div>
+
+
+      <div class="app-icon">
+
+        📲
+
+      </div>
 
     </div>
 
